@@ -1,0 +1,15 @@
+/* Main Body */
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Navbar */
+.container-fluid {
+    padding: 0 10% 0 10%;
+}
+
+.navbar-brand img {
+    height: 45px;
+    padding: 0px;
+    margin: -12px;
+}
