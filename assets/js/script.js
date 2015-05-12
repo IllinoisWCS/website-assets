@@ -4,6 +4,8 @@ $(document).ready(function(){
         var sectionID=$(this).attr("data-id");
         scrollToID('#'+ sectionID,750);
     });
+    
+    $('.carousel').carousel();
 });
 
 function scrollToID(id,speed){

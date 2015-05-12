@@ -1,8 +1,3 @@
-/* Main Body */
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
 /* Navbar */
 .container-fluid {
     padding: 0 10% 0 10%;
@@ -13,3 +8,88 @@
     padding: 0px;
     margin: -12px;
 }
+
+/* Home */
+#home {
+    min-height: 100vh;
+    min-width: 100%;
+}
+.carousel {
+    z-index: -99;
+}
+
+.carousel-inner .item {
+    position: fixed;
+    width: 100% !important;
+    height: 100vh;
+    opacity: 0.75;
+    transition-property: opacity;
+}
+
+.carousel .one {
+    background: url(../img/slideshow/allofficers.jpg);
+    background-size: cover;
+}
+
+.carousel .two {
+    background: url(../img/slideshow/banquet.jpg);
+    background-size: cover;
+}
+
+.carousel .three {
+    background: url(../img/slideshow/chictech.jpg);
+    background-size: cover;
+}
+
+.carousel .four {
+    background: url(../img/slideshow/splash.jpg);
+    background-size: cover;
+}
+
+.carousel .active {
+    opacity: 1;
+}
+
+.carousel .active.left, .carousel .active.right{
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.next.left, .prev.right {
+    opacity: 1;
+}
+
+/* About */
+#about {
+    position: absolute;
+}
+
+#homeText {
+    padding-top: 5%;
+}
+
+    #homeText h1 {
+        font-size: 7em;
+    }
+
+#homeSubText {
+    padding-top: 25%;
+}
+    
+    #homeSubText h4 {
+        font-size: 4em;
+    }
+
+#homeText h1, #homeSubText h4 {
+    color: white;
+}
+
+#arrowDown {
+    text-align: center;
+}
+
+    #arrowDown i {
+        color: white;
+        text-align: center;
+    }
