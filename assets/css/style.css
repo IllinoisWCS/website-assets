@@ -93,18 +93,11 @@ body {
 }
 
 /* Members */
-#members {
-    padding: 0 10% 0 10%;
-}
-
 .memberImage {
     width: 100%;
 }
 
 /* Sponsors */
-#sponsors {
-    padding: 0 10% 0 10%;
-}
 
 /* Temporary */
 .filler {
