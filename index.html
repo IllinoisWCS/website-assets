@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>WCS @ Illinois</title>
-
         <meta name="description" content="Women in Computer Science is an organization under CS@Illinois that strives to provide opportunities and a community for female CS students at University of Illinois."/>
         <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,7 +10,6 @@
         <meta property="og:site_name" content="Women in Computer Science"/>
         <meta property="og:url" content="www.illinoiswcs.org"/>
         <meta property="og:image" content=""/>
-
         <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/bower_components/fontawesome/css/font-awesome.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
@@ -21,10 +19,10 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#" class="scroll-link" data-id="home"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
                 </div>
@@ -45,30 +43,30 @@
                 <div class="carousel-inner">
                     <div class="active item">
                         <img src="assets/img/slideshow/allofficers.jpg" class="img-responsive">
-                            <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/chictech.jpg" class="img-responsive">
-                            <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/slideshow9.png" class="img-responsive">
-                            <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="about">
+        <div id="about" class="padded">
             <h1 align="center">About Us</h1>
             <div class="filler"></div>
         </div>
         <div id="officers">
             <a href="officers.html"><button type="button" id="meetOfficersBtn" class="text-center btn btn-primary btn-lg">Meet Our Officers</button></a>
         </div>
-        <div id="members">
+        <div id="members" class="padded">
             <h1 align="center">Members</h1>
             <div class="row">
                 <div class="col-md-3">
@@ -77,16 +75,45 @@
                 <div class="col-md-3">
                     <p align="center"><a href="mentoring.html"><img src="assets/img/members/mentoring.jpg" class="memberImage" /></a></p>
                 </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <p align="center"><a href="outreach.html"><img src="assets/img/members/outreach.jpg" class="memberImage" /></a></p>
+                </div>
+                <div class="col-md-3">
+                    <p align="center"><img src="assets/img/members/memberportal.jpg" class="memberImage" /></p>
+                </div>
             </div>
         </div>
-        <div id="sponsors">
-
+        <div id="sponsors" class="padded">
+            <h1 align="center">Sponsors</h1>
+            <h4 align="center">Special Thanks To</h4>
+            <a href="sponsors.html">Learn More</a>
         </div>
-        <div id="alumni">
+        <div id="alumni" class="padded">
+            <h1 align="center">Alumni</h1>
+            <h4 align="center">Featured Alumni</h4>
+            <a href="alumni.html">Learn More</a>
         </div>
-        <div id="contact">
+        <div id="contact" class="padded">
+            <h1 align="center">Contact Us</h1>
+            <div class="row">
+                <form role="form">
+                    <div class="form-group col-md-6">
+                        <label for="nameInput">Name</label>
+                        <input class="form-control" type="text" placeholder="Enter Name" id="nameInput" tabindex="1"/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="emailInput">Email</label>
+                        <input class="form-control" type="text" placeholder="Enter Email" id="emailInput" tabindex="2" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="messageInput">Message</label>
+                        <textarea class="form-control" name="message" id="messageInput" rows="6" placeholder="Enter Message" tabindex="3"></textarea>
+                        <br/>
+                        <button type="submit" value="Send" class="btn btn-primary" tabindex="4">Send Message</button>
+                    </div>
+                    <input type="text" name="_gotcha" style="display: none" />
+                </form>
+            </div>
         </div>
         <footer>
             <div class="row">

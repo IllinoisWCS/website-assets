@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
 }
+
 /* Navbar */
 .navbar-brand img {
     height: 45px;
@@ -9,6 +10,11 @@ body {
 }
 
 .navbar .container-fluid {
+    padding: 0 10% 0 10%;
+}
+
+/* Divs */
+.padded {
     padding: 0 10% 0 10%;
 }
 
@@ -93,6 +99,11 @@ body {
 
 .memberImage {
     width: 100%;
+}
+
+/* Sponsors */
+#sponsors {
+    padding: 0 10% 0 10%;
 }
 
 /* Temporary */
