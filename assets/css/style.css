@@ -1,95 +1,102 @@
-/* Navbar */
-.container-fluid {
-    padding: 0 10% 0 10%;
+body {
+    overflow-x: hidden;
 }
-
+/* Navbar */
 .navbar-brand img {
     height: 45px;
     padding: 0px;
     margin: -12px;
 }
 
-/* Home */
-#home {
-    min-height: 100vh;
-    min-width: 100%;
-}
-.carousel {
-    z-index: -99;
+.navbar .container-fluid {
+    padding: 0 10% 0 10%;
 }
 
+/* Home */
 .carousel-inner .item {
-    position: fixed;
-    width: 100% !important;
-    height: 100vh;
     opacity: 0.75;
     transition-property: opacity;
 }
 
-.carousel .one {
-    background: url(../img/slideshow/allofficers.jpg);
-    background-size: cover;
-}
-
-.carousel .two {
-    background: url(../img/slideshow/banquet.jpg);
-    background-size: cover;
-}
-
-.carousel .three {
-    background: url(../img/slideshow/chictech.jpg);
-    background-size: cover;
-}
-
-.carousel .four {
-    background: url(../img/slideshow/splash.jpg);
-    background-size: cover;
-}
-
-.carousel .active {
-    opacity: 1;
-}
-
-.carousel .active.left, .carousel .active.right{
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.next.left, .prev.right {
-    opacity: 1;
-}
-
-/* About */
-#about {
-    position: absolute;
-}
-
-#homeText {
-    padding-top: 5%;
-}
-
-    #homeText h1 {
-        font-size: 7em;
+    .carousel-inner .item{
+        width: 100% !important;
+        height: 100vh !important;
+        min-height: 100vh !important;
+        overflow: hidden;
     }
-
-#homeSubText {
-    padding-top: 25%;
-}
     
-    #homeSubText h4 {
-        font-size: 4em;
+    .item > img {
+        position: relative;
+        width: 100%;
     }
 
-#homeText h1, #homeSubText h4 {
+.carousel-inner .active {
+  opacity: 1;
+}
+
+.homeText, .homeSubText {
     color: white;
 }
 
-#arrowDown {
+    .homeText {
+        padding-top: 5%;
+        font-size: 7em;
+    }
+
+    .homeSubText {
+        padding-top: 25%;
+        font-size: 4em;
+    }
+
+.arrowDown {
     text-align: center;
 }
 
-    #arrowDown i {
+    .arrowDown i {
         color: white;
-        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 5%;
     }
+
+/* About */
+#about {
+    padding: 0 10% 0 10%;
+}
+
+/* Officers */
+#officers {
+    background-image: url('../img/wcs/newofficers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    width: 100% !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    min-width: 100% !important;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+}
+
+#meetOfficersBtn {
+    position: absolute;
+    bottom: 10%;
+    margin: 0 auto;
+}
+
+/* Members */
+#members {
+    padding: 0 10% 0 10%;
+}
+
+.memberImage {
+    width: 100%;
+}
+
+/* Temporary */
+.filler {
+    width: 100%;
+    height: 100vh;
+}
