@@ -4,6 +4,14 @@ $(document).ready(function(){
         var sectionID=$(this).attr("data-id");
         scrollToID('#'+ sectionID,750);
     });
+
+    $('.memberImage').hover(function() {
+    	$(this).children().css("visibility", "visible");
+    }, function() {
+    	$(this).children().css("visibility", "hidden");
+    });
+
+    $("#slideshow").carousel();
 });
 
 function scrollToID(id,speed){
