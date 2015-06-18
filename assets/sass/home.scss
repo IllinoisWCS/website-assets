@@ -1,0 +1,27 @@
+.carousel-inner {
+  .item {
+    opacity: 0.75;
+    transition-property: opacity;
+    width: 100% !important;
+    height: 70vh !important;
+    overflow: hidden;
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+.arrowDown {
+  text-align: center;
+  i {
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+  }
+}

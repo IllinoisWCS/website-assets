@@ -1,103 +1,75 @@
+/* Main Components */
+/* line 1, ../sass/main-components.scss */
 body {
   overflow-x: hidden;
 }
 
-/* Navbar */
+/* line 5, ../sass/main-components.scss */
+.padded {
+  padding: 0 10% 0 10%;
+}
+
+/* Temporary */
+/* line 10, ../sass/main-components.scss */
+.filler {
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 2, ../sass/navbar.scss */
 .navbar-brand img {
   height: 45px;
   padding: 0px;
   margin: -12px;
 }
 
+/* line 10, ../sass/navbar.scss */
 .navbar .container-fluid {
   padding: 0 10% 0 10%;
 }
 
-/* Divs */
-.padded {
-  padding: 0 10% 0 10%;
-}
-
-/* Home */
+/* Individual Divs */
+/* line 2, ../sass/home.scss */
 .carousel-inner .item {
   opacity: 0.75;
   transition-property: opacity;
+  width: 100% !important;
+  height: 70vh !important;
+  overflow: hidden;
 }
-
-  .carousel-inner .item{
-    width: 100% !important;
-    height: 100vh !important;
-    min-height: 100vh !important;
-    overflow: hidden;
-  }
-  
-  .item > img {
-    position: relative;
-    width: 100%;
-  }
-
+/* line 8, ../sass/home.scss */
+.carousel-inner .item img {
+  position: relative;
+  width: 100%;
+}
+/* line 14, ../sass/home.scss */
 .carousel-inner .active {
   opacity: 1;
 }
 
-.homeText, .homeSubText {
-  color: white;
-}
-
-  .homeText {
-    padding-top: 5%;
-    font-size: 7em;
-  }
-
-  .homeSubText {
-    padding-top: 25%;
-    font-size: 4em;
-  }
-
+/* line 19, ../sass/home.scss */
 .arrowDown {
   text-align: center;
 }
+/* line 21, ../sass/home.scss */
+.arrowDown i {
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5%;
+}
 
-  .arrowDown i {
-    color: white;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 5%;
-  }
-
-/* About */
+/* line 1, ../sass/about.scss */
 #about {
   padding: 0 10% 0 10%;
 }
 
+/* line 5, ../sass/about.scss */
 #mission {
-  padding-top: 10%;
   padding-bottom: 10%;
 }
 
-/* Officers */
-#officers {
-  background-image: url('../img/wcs/newofficers.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  width: 100% !important;
-  height: 100vh !important;
-  min-height: 100vh !important;
-  min-width: 100% !important;
-  position: relative;
-  text-align: center;
-  vertical-align: center;
-}
-
-#meetOfficersBtn {
-  position: absolute;
-  bottom: 10%;
-  margin: 0 auto;
-}
-
-/* Members */
+/* line 1, ../sass/members.scss */
 .memberImage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,51 +80,7 @@ body {
   height: 40vh !important;
   padding: -15 !important;
 }
-
-#techTeam {
-  background-image: url('../img/members/techteam.jpg');
-}
-
-#techTeam:hover {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../img/members/techteam.jpg');    
-}
-
-#mentoring {
-  background-image: url('../img/members/mentoring.jpg');
-}
-
-#mentoring:hover {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../img/members/mentoring.jpg');    
-}
-
-#outreach {
-  background-image: url('../img/members/outreach.jpg');
-}
-
-#outreach:hover {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../img/members/outreach.jpg');
-}
-
-#memberPortal {
-  background-image: url('../img/members/memberPortal.jpg');
-}
-
-#memberPortal:hover {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../img/members/memberPortal.jpg');
-}
-
+/* line 10, ../sass/members.scss */
 .memberImage h2 {
   font-weight: 900;
   color: white;
@@ -166,18 +94,70 @@ body {
   visibility: hidden;
 }
 
-/* Sponsors */
+/* line 31, ../sass/members.scss */
+#techTeam {
+  background-image: url("../img/members/techteam.jpg");
+}
+/* line 33, ../sass/members.scss */
+#techTeam:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/techteam.jpg");
+}
+
+/* line 38, ../sass/members.scss */
+#mentoring {
+  background-image: url("../img/members/mentoring.jpg");
+}
+/* line 40, ../sass/members.scss */
+#mentoring:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/mentoring.jpg");
+}
+
+/* line 45, ../sass/members.scss */
+#outreach {
+  background-image: url("../img/members/outreach.jpg");
+}
+/* line 47, ../sass/members.scss */
+#outreach:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/outreach.jpg");
+}
+
+/* line 52, ../sass/members.scss */
+#memberPortal {
+  background-image: url("../img/members/memberPortal.jpg");
+}
+/* line 54, ../sass/members.scss */
+#memberPortal:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberPortal.jpg");
+}
+
+/* line 1, ../sass/sponsors.scss */
 .sponsors-row {
   padding-bottom: 2%;
 }
-
-.sponsor-small{
+/* line 3, ../sass/sponsors.scss */
+.sponsors-row .sponsor-small {
   vertical-align: center;
   width: 100%;
 }
 
-/* Temporary */
-.filler {
-  width: 100%;
-  height: 100vh;
+/* line 1, ../sass/officers.scss */
+#officers {
+  background-image: url("../img/wcs/newofficers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  min-width: 100% !important;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+}
+/* line 14, ../sass/officers.scss */
+#officers #meetOfficersBtn {
+  position: absolute;
+  bottom: 10%;
+  margin: 0 auto;
 }
