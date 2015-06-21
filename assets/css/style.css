@@ -9,11 +9,32 @@ body {
   padding: 0 10% 0 10%;
 }
 
+/* line 9, ../sass/main-components.scss */
+#socialMediaLinks {
+  display: block;
+  padding-left: 0px;
+}
+/* line 13, ../sass/main-components.scss */
+#socialMediaLinks li {
+  display: inline;
+  margin: 10px;
+}
+
 /* Temporary */
-/* line 10, ../sass/main-components.scss */
+/* line 20, ../sass/main-components.scss */
 .filler {
   width: 100%;
   height: 100vh;
+}
+
+/* line 25, ../sass/main-components.scss */
+footer {
+  background-color: #eee;
+  padding: 10px;
+}
+/* line 28, ../sass/main-components.scss */
+footer p {
+  margin: 0;
 }
 
 /* line 2, ../sass/navbar.scss */
