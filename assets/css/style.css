@@ -182,3 +182,9 @@ footer p {
   bottom: 10%;
   margin: 0 auto;
 }
+
+/* line 21, ../sass/officers.scss */
+.officerPicture {
+  width: 100%;
+  height: auto;
+}

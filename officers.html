@@ -36,12 +36,29 @@
         </nav>-->
 
         <script type="text/template" id="officerTemplate">
-        {{#officers}}
-            {{name}}
-        {{/officers}}
+            {{#officers}}
+                <div class="row">
+                {{#first}}
+                <div class="col-md-6">
+                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
+                    <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{year}}</p>
+                    <p>{{major}}</p>
+                </div>
+                {{/first}}
+                {{^first}}
+                <div class="col-md-6">
+                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
+                    <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{year}}</p>
+                    <p>{{major}}</p>
+                </div>
+                {{/first}}
+                </div>
+            {{/officers}}
         </script>
 
-        <div id="allOfficers"></div>
+        <div id="allOfficers" class="padded"></div>
         
         <!--<footer class="padded">
             <div class="row">
