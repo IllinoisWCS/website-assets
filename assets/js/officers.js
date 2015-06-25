@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var officers = {
-		"officers": [
+		"prez": [
 	    {
 	      "position": "President",
 	      "firstname": "Annie",
@@ -13,8 +13,7 @@ $(document).ready(function() {
 	      "experience": "JPMorgan, Applications Developer Intern, Summer 2013 & 2014\nUIUC, CS242 TA, Spring 2015\nUIUC, NCSA SPIN Intern, Spring 2015\nTwitter, Software Development Intern, Summer 2015",
 	      "hobbies": "Binge drinking coffee, Coding, Drawing",
 	      "fact": "I still play Neopets more often than I care to admit. ",
-	      "place": "Urbana, USA",
-	      "first": true
+	      "place": "Urbana, USA"
 	    },
 	    {
 	      "position": "Vice President",
@@ -28,9 +27,10 @@ $(document).ready(function() {
 	      "experience": "Microsoft, Software Engineering Intern, May-Aug 2015;\nMicrosoft, Explore Intern, May-Aug 2014;\nUIUC, Independent Study with Professor Heeren, 2014-present;\nUIUC, Independent Study with Professor Angrave, 2013-2014\n",
 	      "hobbies": "Playing with dogs :);\nWatching TV;\nPiano",
 	      "fact": "I have a twin sister!",
-	      "place": "Foster City, CA",
-	      "first": false
-	    },
+	      "place": "Foster City, CA"
+	    }
+	  ],
+	  "admin": [
 	    {
 	      "position": "Secretary",
 	      "firstname": "Lily",
@@ -43,8 +43,7 @@ $(document).ready(function() {
 	      "experience": "Summer 2013 Technical Intern Foresight ROI \nSummer 2014 Software Intern Apollo Education Group\n2014-2015 CITES Helpdesk Consultant",
 	      "hobbies": "Video Games (LoL, Pokemon, various RPGs)\nViolin\nPlaying with my 3 cats (and the 2 other cats that live with us)\nSleeping\nPizza",
 	      "fact": "I am a black belt in Tae-Kwon-Do, and am also a certified scuba diving instructor. ",
-	      "place": "Barrington, IL",
-	      "first": true
+	      "place": "Barrington, IL"
 	    },
 	    {
 	      "position": "Treasurer",
@@ -58,8 +57,7 @@ $(document).ready(function() {
 	      "experience": "CS 225 Teaching Assistant",
 	      "hobbies": "Playing computer games, Building PCs, Watching Netflix/animes, Sleeping",
 	      "fact": "I lived in Canada for 7 months.",
-	      "place": "Arlington Heights, USA",
-	      "first": false
+	      "place": "Arlington Heights, USA"
 	    },
 	    {
 	      "position": "Webmaster",
@@ -73,9 +71,10 @@ $(document).ready(function() {
 	      "experience": "Paycor Inc., IT Application Intern, Summer 2012\nP&G, GBS-HRSS IT Intern, Summer 2013\nkCura, Software Engineering Intern, Summer 2014\nDow Chemical Company, Systems Intern, School-Year 2014-2015\nIntuit, Software Engineering Intern, Summer 2015",
 	      "hobbies": "Listening to Music, Singing at the top of my lungs, Reading, Writing, Going Ice Skating, Web Development",
 	      "fact": "I have a broken nose that has yet to be fixed. So yes, I need a nose job. :)",
-	      "place": "West Chester, OH",
-	      "first": true
-	    },
+	      "place": "West Chester, OH"
+	    }
+	   ],
+	   "chair": [
 	    {
 	      "position": "Academic Chair",
 	      "firstname": "Robin",
@@ -88,8 +87,7 @@ $(document).ready(function() {
 	      "experience": "Thomas Jefferson High School, Teaching Assistant, Summer 2011\nCapitol Information Group, IT Intern, Summers 2011-2014\nUniversity of Illinois, Teaching Assistant, 2015-current\nQuantlab Financial, Technology Intern, Summer 2015",
 	      "hobbies": "Writing, reading comic books, watching movies and TV shows.",
 	      "fact": "I have an amazing memories but I waste it all on movie quotes and actors' filmographies.",
-	      "place": "McLean, Virginia",
-	      "first": false
+	      "place": "McLean, Virginia"
 	    },
 	    {
 	      "position": "Outreach Chair",
@@ -103,8 +101,7 @@ $(document).ready(function() {
 	      "experience": "State Farm Research and development Center, Champaign, IL\nSystems Intern\nAugust 2013 - May 2014\n\nBank of America, Chicago, IL\nTechnology Developer and Analyst\nSummer 2014",
 	      "hobbies": "Running, Cooking, Hanging out with friends and family",
 	      "fact": "I have a huge family--between 40 and 50 first cousins!",
-	      "place": "Forrest, IL US",
-	      "first": true
+	      "place": "Forrest, IL US"
 	    },
 	    {
 	      "position": "Mentoring Chair",
@@ -118,9 +115,10 @@ $(document).ready(function() {
 	      "experience": "Place : Tata Consultancy Services, Kolkata India \nYear : Summer 2014\nPosition : Developer\n\nPlace: Microsoft\nYear: Upcoming Summer\nPosition : Intern",
 	      "hobbies": "Dancing, Reading, Interacting with new people ",
 	      "fact": "Dance is my stress buster! I absolutely love dancing, which includes dancing between coding if needed to destress! ",
-	      "place": "Champaign",
-	      "first": false
-	    },
+	      "place": "Champaign"
+	    }
+	  ],
+	  "chair2": [
 	    {
 	      "position": "Tech Team Chair",
 	      "firstname": "Sara",
@@ -133,8 +131,7 @@ $(document).ready(function() {
 	      "experience": "GNU/Linux OS Dev Intern at CoreOS, starting Summer 2015,\nBIOS Development Intern at Intel, August 2013 - June 2014,\nAnalog Verification Intern at Intel, June 2012 - January 2013,\nECE 110 Teaching Assistant, UIUC, August 2011 - May 2012,\nComputer Engineering Co-op at AMD, May 2011 - August 2011,\nWeb R&D Intern at Wolfram, December 2010 - April 2011,\nParticle Physics Research Mentorship, Fermilab, August 2008 - May 2010\nITS Lead Student Hardware Technician, IMSA, November 2008 - May 2010\n",
 	      "hobbies": "Playing with circuits, developing cool software and hardware, singing, guitar, E&M music, teaching, math, graphic design, competitive dance games, figure skating, and more that I couldn't possibly list! :)",
 	      "fact": "I currently own and maintain 5 Dance Dance Revolution style arcade machines, which are all privately shared or generate revenue in public venues. I like to play on them too, of course! ",
-	      "place": "Seattle, WA",
-	      "first": true
+	      "place": "Seattle, WA"
 	    },
 	    {
 	      "position": "Social Chair",
@@ -148,8 +145,7 @@ $(document).ready(function() {
 	      "experience": "BTwin (Lille, France)\nTest Engineer Intern\nJuly 2014",
 	      "hobbies": "looking at puppies on the internet\nplaying cards\nbaking",
 	      "fact": "I like cats but I'm allergic to them :(",
-	      "place": "Barrington, IL, USA",
-	      "first": false
+	      "place": "Barrington, IL, USA"
 	    },
 	    {
 	      "position": "Corporate Chair",
@@ -163,9 +159,10 @@ $(document).ready(function() {
 	      "experience": "State Farm (IT/System Intern) Nov 2013 - Dec 2014\nGroupon (SWE Intern) Summer 2015",
 	      "hobbies": "Badminton, Napping, Playing the flute",
 	      "fact": "I had a British passport, but I have never been to England",
-	      "place": "Champaign",
-	      "first": true
-	    },
+	      "place": "Champaign"
+	    }
+	  ],
+	  "chair3": [
 	    {
 	      "position": "Publicity Chair",
 	      "firstname": "Madeline",
@@ -178,8 +175,7 @@ $(document).ready(function() {
 	      "experience": "University of Illinois - Micro and Nanotechnology Laboratory, Reserach Intern, Summer 2014; CME Group, Development Intern, Summer 2015; NCSA, Undergraduate Research Assistant, Fall 2015",
 	      "hobbies": "Writing, Cooking, Playing Volleyball, Listening to Music, Hanging with Friends",
 	      "fact": "I have a mild phobia of fish.",
-	      "place": "Chicago, IL",
-	      "first": false
+	      "place": "Chicago, IL"
 	    },
 	    {
 	      "position": "Alumni Chair",
@@ -193,8 +189,7 @@ $(document).ready(function() {
 	      "experience": "Previous:\nAarki, Inc - Business Development Intern - June to August 2012\nPeel Technologies - Engineering Intern - June to August 2013\nUpcoming:\nZeta Interactive - Engineering Intern - June to August 2015",
 	      "hobbies": "Drawing portraits, singing, piano, tennis, reading books, biking, writing ",
 	      "fact": "I love singing obnoxiously in empty elevators and pretending nothing happened when someone enters. ",
-	      "place": "Cupertino, CA, USA",
-	      "first": true
+	      "place": "Cupertino, CA, USA"
 	    },
 	    {
 	      "position": "Grad Chair",
@@ -208,10 +203,9 @@ $(document).ready(function() {
 	      "experience": "Previous - Undergrad TA for CS 173\nCurrent - Grad TA for CS 242\nComputer Vision Research with Derek Hoeim",
 	      "hobbies": "Cooking , Reading , android development, volunteering ",
 	      "fact": "I do math in my head using an imaginary abacus. ",
-	      "place": "Bangalore,India",
-	      "first": false
+	      "place": "Bangalore,India"
 	    }
-		]
+	  ]
 	}
 
 	var output = Mustache.render($('#officerTemplate').html(), officers);

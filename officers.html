@@ -36,26 +36,61 @@
         </nav>-->
 
         <script type="text/template" id="officerTemplate">
-            {{#officers}}
-                <div class="row">
-                {{#first}}
+            <div class="row">
+                {{#prez}}
                 <div class="col-md-6">
                     <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
                     <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{position}}</p>
                     <p>{{year}}</p>
                     <p>{{major}}</p>
                 </div>
-                {{/first}}
-                {{^first}}
-                <div class="col-md-6">
+                {{/prez}}
+            </div>
+            <div class="row">
+                {{#admin}}
+                <div class="col-md-4">
                     <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
                     <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{position}}</p>
                     <p>{{year}}</p>
                     <p>{{major}}</p>
                 </div>
-                {{/first}}
+                {{/admin}}
+            </div>
+            <div class="row">
+                {{#chair}}
+                <div class="col-md-4">
+                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
+                    <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{position}}</p>
+                    <p>{{year}}</p>
+                    <p>{{major}}</p>
                 </div>
-            {{/officers}}
+                {{/chair}}
+            </div>
+            <div class="row">
+                {{#chair2}}
+                <div class="col-md-4">
+                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
+                    <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{position}}</p>
+                    <p>{{year}}</p>
+                    <p>{{major}}</p>
+                </div>
+                {{/chair2}}
+            </div>
+            <div class="row">
+                {{#chair3}}
+                <div class="col-md-4">
+                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg"></img>
+                    <h1>{{firstname}} {{lastname}}</h1>
+                    <p>{{position}}</p>
+                    <p>{{year}}</p>
+                    <p>{{major}}</p>
+                </div>
+                {{/chair3}}
+            </div>
         </script>
 
         <div id="allOfficers" class="padded"></div>
