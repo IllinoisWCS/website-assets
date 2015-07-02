@@ -1,38 +1,46 @@
 /* Main Components */
 /* line 1, ../sass/main-components.scss */
-body {
-  overflow-x: hidden;
+html {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 5, ../sass/main-components.scss */
-.padded {
-  padding: 0 10% 0 10%;
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 9, ../sass/main-components.scss */
+/* line 11, ../sass/main-components.scss */
+.padded {
+  padding: 5% 10% 0 10%;
+}
+
+/* line 15, ../sass/main-components.scss */
 #socialMediaLinks {
   display: block;
   padding-left: 0px;
 }
-/* line 13, ../sass/main-components.scss */
+/* line 19, ../sass/main-components.scss */
 #socialMediaLinks li {
   display: inline;
   margin: 10px;
 }
 
 /* Temporary */
-/* line 20, ../sass/main-components.scss */
+/* line 26, ../sass/main-components.scss */
 .filler {
   width: 100%;
   height: 100vh;
 }
 
-/* line 25, ../sass/main-components.scss */
+/* line 31, ../sass/main-components.scss */
 footer {
   background-color: #eee;
-  padding: 10px;
+  padding: 5% 10% 5% 10%;
 }
-/* line 28, ../sass/main-components.scss */
+/* line 34, ../sass/main-components.scss */
 footer p {
   margin: 0;
 }
@@ -49,6 +57,20 @@ footer p {
   padding: 0 10% 0 10%;
 }
 
+@media (min-width: 767px) {
+  /* line 16, ../sass/navbar.scss */
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  /* line 23, ../sass/navbar.scss */
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
 /* Individual Divs */
 /* line 2, ../sass/home.scss */
 .carousel-inner .item {
@@ -82,12 +104,7 @@ footer p {
 
 /* line 1, ../sass/about.scss */
 #about {
-  padding: 0 10% 0 10%;
-}
-
-/* line 5, ../sass/about.scss */
-#mission {
-  padding-bottom: 10%;
+  padding: 5% 10% 5% 10%;
 }
 
 /* line 1, ../sass/members.scss */
@@ -173,17 +190,19 @@ footer p {
   min-height: 100vh !important;
   min-width: 100% !important;
   position: relative;
-  text-align: center;
-  vertical-align: center;
 }
-/* line 14, ../sass/officers.scss */
+/* line 12, ../sass/officers.scss */
 #officers #meetOfficersBtn {
   position: absolute;
-  bottom: 10%;
   margin: 0 auto;
+  display: block;
+  bottom: 10%;
+  width: 40%;
+  font-size: 3em;
+  left: 30%;
 }
 
-/* line 21, ../sass/officers.scss */
+/* line 23, ../sass/officers.scss */
 .officerPicture {
   width: 100%;
   height: auto;

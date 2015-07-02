@@ -1,25 +1,19 @@
-$(document).ready(function(){
-    $('.scroll-link').on('click',function(event){
-        event.preventDefault();
-        var sectionID=$(this).attr("data-id");
-        scrollToID('#'+ sectionID,750);
-    });
-
-    $('.memberImage').hover(function() {
-    	$(this).children().css("visibility", "visible");
-    }, function() {
-    	$(this).children().css("visibility", "hidden");
-    });
-
-    $("#slideshow").carousel();
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
 });
 
-function scrollToID(id,speed){
-    var offset=50;
-    var targetOffset=$(id).offset().top- offset;
-    $('html,body').animate({scrollTop:targetOffset},speed);
-}
-
-if(typeof console==="undefined"){
-    console={log:function(){}};
-}
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});

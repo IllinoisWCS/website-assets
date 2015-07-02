@@ -16,26 +16,41 @@
         <link rel="stylesheet" type="text/css" href="assets/lib/fontawesome/css/font-awesome.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
     </head>
-    <body>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" class="scroll-link" data-id="home"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" class="scroll-link" data-id="about">About</a></li>
-                        <li><a href="#" class="scroll-link" data-id="officers">Officers</a></li>
-                        <li><a href="#" class="scroll-link" data-id="members">Members</a></li>
-                        <li><a href="#" class="scroll-link" data-id="sponsors">Sponsors</a></li>
-                        <li><a href="#" class="scroll-link" data-id="alumni">Alumni</a></li>
-                        <li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#officers">Officers</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#members">Members</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#sponsors">Sponsors</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#alumni">Alumni</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,17 +61,17 @@
                 <div class="carousel-inner">
                     <div class="active item">
                         <img src="assets/img/slideshow/allofficers.jpg" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#about" class="page-scroll"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/chictech.jpg" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#about" class="page-scroll"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/slideshow9.png" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        <div class="arrowDown"><a href="#about" class="page-scroll"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                 </div>
@@ -64,14 +79,12 @@
         </div>
         
         <div id="about" class="padded">
-            <div class="row" id="mission">
-                <h1 align="center">About Us</h1>
-                <p>Women in Computer Science (WCS) is a student group under CS@Illinois that is a non-profit, educational, student-run service organization dedicated to supporting the efforts of young women who are considering pursuit of a career in computer science or show an overall interest in technology. Because of the number of women pursuing Computer Science has been steadily decreasing, this organization aims to retain and provide a network of support for members to rely on for advice and camaraderie.</p>
-            </div>
+            <h1 align="center">About Us</h1>
+            <p>Women in Computer Science (WCS) is a student group under CS@Illinois that is a non-profit, educational, student-run service organization dedicated to supporting the efforts of young women who are considering pursuit of a career in computer science or show an overall interest in technology. Because of the number of women pursuing Computer Science has been steadily decreasing, this organization aims to retain and provide a network of support for members to rely on for advice and camaraderie.</p>
         </div>
         
         <div id="officers">
-            <a href="officers.html"><button type="button" id="meetOfficersBtn" class="text-center btn btn-primary btn-lg">Meet Our Officers</button></a>
+            <a href="officers.html"><button type="button" id="meetOfficersBtn" class="btn btn-primary btn-lg">Meet Our Officers</button></a>
         </div>
         
         <div id="members" class="padded">
@@ -139,7 +152,7 @@
             </div>
         </div>
         
-        <footer class="padded">
+        <footer>
             <div class="row">
                 <div class="col-md-4">
                     <p>Women in Computer Science</p>
@@ -163,6 +176,7 @@
         </footer>
         
         <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/lib/jquery-easing-original/jquery.easing.min.js"></script>
         <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>

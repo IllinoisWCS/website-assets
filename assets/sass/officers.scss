@@ -9,12 +9,14 @@
   min-height: 100vh !important;
   min-width: 100% !important;
   position: relative;
-  text-align: center;
-  vertical-align: center;
   #meetOfficersBtn {
     position: absolute;
-    bottom: 10%;
     margin: 0 auto;
+    display: block;
+    bottom: 10%;
+    width: 40%;
+    font-size: 3em;
+    left: 30%;
   }
 }
 
