@@ -143,12 +143,12 @@ footer p {
 }
 
 /* line 52, ../sass/members.scss */
-#memberPortal {
+#memberportal {
   background-image: url("../img/members/memberPortal.jpg");
 }
 /* line 54, ../sass/members.scss */
-#memberPortal:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberPortal.jpg");
+#memberportal:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberportal.jpg");
 }
 
 /* line 1, ../sass/sponsors.scss */
