@@ -49,9 +49,9 @@
   }
 }
 
-#memberPortal {
+#memberportal {
   background-image: url('../img/members/memberPortal.jpg');
   &:hover {
-    @include gradientBackground('../img/members/memberPortal.jpg');
+    @include gradientBackground('../img/members/memberportal.jpg');
   }
 }
