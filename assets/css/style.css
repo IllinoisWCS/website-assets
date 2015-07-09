@@ -1,158 +1,107 @@
+/* Main Components */
+/* line 1, ../sass/main-components.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/main-components.scss */
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-/* Navbar */
-.navbar-brand img {
-    height: 45px;
-    padding: 0px;
-    margin: -12px;
-}
-
-.navbar .container-fluid {
-    padding: 0 10% 0 10%;
-}
-
-/* Divs */
+/* line 11, ../sass/main-components.scss */
 .padded {
-    padding: 0 10% 0 10%;
+  padding: 2.5% 0 2.5% 0;
 }
 
-/* Home */
+/* line 15, ../sass/main-components.scss */
+#socialMediaLinks {
+  display: block;
+  padding-left: 0px;
+}
+/* line 19, ../sass/main-components.scss */
+#socialMediaLinks li {
+  display: inline;
+  margin: 10px;
+}
+
+/* Temporary */
+/* line 26, ../sass/main-components.scss */
+.filler {
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 31, ../sass/main-components.scss */
+footer {
+  background-color: #eee;
+  padding: 5% 10% 5% 10%;
+}
+/* line 34, ../sass/main-components.scss */
+footer p {
+  margin: 0;
+}
+
+/* line 2, ../sass/navbar.scss */
+.navbar-brand img {
+  height: 45px;
+  padding: 0px;
+  margin: -12px;
+}
+
+/* line 10, ../sass/navbar.scss */
+.navbar .container-fluid {
+  padding: 0 10% 0 10%;
+}
+
+@media (min-width: 767px) {
+  /* line 16, ../sass/navbar.scss */
+  .mainNav {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  /* line 23, ../sass/navbar.scss */
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+/* Individual Divs */
+/* line 2, ../sass/home.scss */
 .carousel-inner .item {
-    opacity: 0.75;
-    transition-property: opacity;
+  opacity: 0.75;
+  transition-property: opacity;
+  width: 100% !important;
+  height: 72.5vh !important;
+  overflow: hidden;
 }
-
-    .carousel-inner .item{
-        width: 100% !important;
-        height: 100vh !important;
-        min-height: 100vh !important;
-        overflow: hidden;
-    }
-    
-    .item > img {
-        position: relative;
-        width: 100%;
-    }
-
+/* line 8, ../sass/home.scss */
+.carousel-inner .item img {
+  position: relative;
+  width: 100%;
+}
+/* line 14, ../sass/home.scss */
 .carousel-inner .active {
   opacity: 1;
 }
 
-.homeText, .homeSubText {
-    color: white;
-}
-
-    .homeText {
-        padding-top: 5%;
-        font-size: 7em;
-    }
-
-    .homeSubText {
-        padding-top: 25%;
-        font-size: 4em;
-    }
-
-.arrowDown {
-    text-align: center;
-}
-
-    .arrowDown i {
-        color: white;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 5%;
-    }
-
-/* About */
-#about {
-    padding: 0 10% 0 10%;
-}
-
-#mission {
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-/* Officers */
-#officers {
-    background-image: url('../img/wcs/newofficers.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    width: 100% !important;
-    height: 100vh !important;
-    min-height: 100vh !important;
-    min-width: 100% !important;
-    position: relative;
-    text-align: center;
-    vertical-align: center;
-}
-
-#meetOfficersBtn {
-    position: absolute;
-    bottom: 10%;
-    margin: 0 auto;
-}
-
-/* Members */
+/* line 1, ../sass/members.scss */
 .memberImage {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    text-align: center;
-    vertical-align: center;
-    height: 40vh !important;
-    padding: -15 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  min-height: 50vh !important;
+  padding: -15 !important;
 }
-
-#techTeam {
-    background-image: url('../img/members/techteam.jpg');
-}
-
-#techTeam:hover {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('../img/members/techteam.jpg');    
-}
-
-#mentoring {
-    background-image: url('../img/members/mentoring.jpg');
-}
-
-#mentoring:hover {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('../img/members/mentoring.jpg');    
-}
-
-#outreach {
-    background-image: url('../img/members/outreach.jpg');
-}
-
-#outreach:hover {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('../img/members/outreach.jpg');
-}
-
-#memberPortal {
-    background-image: url('../img/members/memberPortal.jpg');
-}
-
-#memberPortal:hover {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('../img/members/memberPortal.jpg');
-}
-
+/* line 10, ../sass/members.scss */
 .memberImage h2 {
   font-weight: 900;
   color: white;
@@ -166,10 +115,82 @@ body {
   visibility: hidden;
 }
 
-/* Sponsors */
+/* line 31, ../sass/members.scss */
+#techTeam {
+  background-image: url("../img/members/techteam.jpg");
+}
+/* line 33, ../sass/members.scss */
+#techTeam:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/techteam.jpg");
+}
 
-/* Temporary */
-.filler {
-    width: 100%;
-    height: 100vh;
+/* line 38, ../sass/members.scss */
+#mentoring {
+  background-image: url("../img/members/mentoring.jpg");
+}
+/* line 40, ../sass/members.scss */
+#mentoring:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/mentoring.jpg");
+}
+
+/* line 45, ../sass/members.scss */
+#outreach {
+  background-image: url("../img/members/outreach.jpg");
+}
+/* line 47, ../sass/members.scss */
+#outreach:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/outreach.jpg");
+}
+
+/* line 52, ../sass/members.scss */
+#memberPortal {
+  background-image: url("../img/members/memberPortal.jpg");
+}
+/* line 54, ../sass/members.scss */
+#memberPortal:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberPortal.jpg");
+}
+
+/* line 1, ../sass/sponsors.scss */
+.sponsors-row {
+  padding-bottom: 2%;
+}
+/* line 3, ../sass/sponsors.scss */
+.sponsors-row .sponsor-small {
+  vertical-align: center;
+  width: 100%;
+}
+
+/* line 1, ../sass/officers.scss */
+#officers {
+  background-image: url("../img/wcs/newofficers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  min-width: 100% !important;
+  position: relative;
+}
+/* line 12, ../sass/officers.scss */
+#officers #meetOfficersBtn {
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+  bottom: 10%;
+  width: 40%;
+  left: 30%;
+}
+
+/* line 22, ../sass/officers.scss */
+.officerPicture {
+  width: 100%;
+  height: auto;
+}
+
+/* line 27, ../sass/officers.scss */
+#meetOfficers {
+  padding-top: 5%;
 }

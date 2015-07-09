@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>WCS @ Illinois</title>
+        
         <meta name="description" content="Women in Computer Science is an organization under CS@Illinois that strives to provide opportunities and a community for female CS students at University of Illinois."/>
         <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,114 +11,196 @@
         <meta property="og:site_name" content="Women in Computer Science"/>
         <meta property="og:url" content="www.illinoiswcs.org"/>
         <meta property="og:image" content=""/>
-        <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
-        <link rel="stylesheet" type="text/css" href="assets/bower_components/fontawesome/css/font-awesome.min.css"></link>
+        
+        <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" type="text/css" href="assets/lib/fontawesome/css/font-awesome.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
     </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <nav class="mainNav navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" class="scroll-link" data-id="home"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" class="scroll-link" data-id="about">About</a></li>
-                        <li><a href="#" class="scroll-link" data-id="officers">Officers</a></li>
-                        <li><a href="#" class="scroll-link" data-id="members">Members</a></li>
-                        <li><a href="#" class="scroll-link" data-id="sponsors">Sponsors</a></li>
-                        <li><a href="#" class="scroll-link" data-id="alumni">Alumni</a></li>
-                        <li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#officers">Officers</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#members">Members</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#sponsors">Sponsors</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#alumni">Alumni</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
         <div id="home">
             <div id="slideshow" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="active item">
                         <img src="assets/img/slideshow/allofficers.jpg" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/chictech.jpg" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
                         </img>
                     </div>
                     <div class="item">
                         <img src="assets/img/slideshow/slideshow9.png" class="img-responsive">
-                        <div class="arrowDown"><a href="#" class="scroll-link" data-id="about"><i class="fa fa-chevron-down fa-5x"></i></a></div>
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/slideshow/banquet.jpg" class="img-responsive">
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/slideshow/slideshow9.jpg" class="img-responsive">
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/slideshow/splash.jpg" class="img-responsive">
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/slideshow/banquet2.jpg" class="img-responsive">
                         </img>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="about" class="padded">
-            <div class="row" id="mission">
+        
+        <div id="about" class="row padded">
+            <div class="col-sm-offset-1 col-md-10">
                 <h1 align="center">About Us</h1>
                 <p>Women in Computer Science (WCS) is a student group under CS@Illinois that is a non-profit, educational, student-run service organization dedicated to supporting the efforts of young women who are considering pursuit of a career in computer science or show an overall interest in technology. Because of the number of women pursuing Computer Science has been steadily decreasing, this organization aims to retain and provide a network of support for members to rely on for advice and camaraderie.</p>
             </div>
         </div>
+        
         <div id="officers">
-            <a href="officers.html"><button type="button" id="meetOfficersBtn" class="text-center btn btn-primary btn-lg">Meet Our Officers</button></a>
+            <a href="officers.html"><button type="button" id="meetOfficersBtn" class="btn btn-primary btn-lg">Meet Our Officers</button></a>
         </div>
-        <div id="members" class="padded">
-            <h1 align="center">Members</h1>
-            <div class="row">
-                <a href="tech-team.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="techTeam"><h2>Tech Team</h2></div></div></a>
-                <a href="mentoring.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="mentoring"><h2>Mentoring</h2></div></div></a>
-                <a href="outreach.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="outreach"><h2>Outreach</h2></div></div></a>
-                <div class="col-md-3"><div class="memberImage" id="memberPortal"><h2>Member Portal (Coming Soon)</h2></div></div>
+        
+        <div id="members" class="row padded">
+            <div class="col-sm-offset-1 col-md-10">
+                <h1 align="center">Members</h1>
+                <div class="row">
+                    <a href="tech-team.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="techTeam"><h2>Tech Team</h2></div></div></a>
+                    <a href="mentoring.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="mentoring"><h2>Mentoring</h2></div></div></a>
+                    <a href="outreach.html" target="_blank"><div class="col-md-3"><div class="memberImage" id="outreach"><h2>Outreach</h2></div></div></a>
+                    <div class="col-md-3"><div class="memberImage" id="memberPortal"><h2>Member Portal (Coming Soon)</h2></div></div>
+                </div>
             </div>
         </div>
-        <div id="sponsors" class="padded">
-            <h1 align="center">Sponsors</h1>
-            <h4 align="center">Special Thanks To</h4>
-            <a href="sponsors.html">Learn More</a>
-        </div>
-        <div id="alumni" class="padded">
-            <h1 align="center">Alumni</h1>
-            <h4 align="center">Featured Alumni</h4>
-            <a href="alumni.html">Learn More</a>
-        </div>
-        <div id="contact" class="padded">
-            <h1 align="center">Contact Us</h1>
-            <div class="row">
-                <form role="form">
-                    <div class="form-group col-md-6">
-                        <label for="nameInput">Name</label>
-                        <input class="form-control" type="text" placeholder="Enter Name" id="nameInput" tabindex="1"/>
+        
+        <div id="sponsors" class="row padded">
+            <div class="col-sm-offset-1 col-md-10">
+                <h1 align="center">Sponsors</h1>
+                <h4 align="center">Special Thanks To</h4>
+                <div class="row sponsors-row">
+                    <div class="col-md-2">
+                        <img class="sponsor-small" src="assets/img/logos/cisco.png"></img>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <label for="emailInput">Email</label>
-                        <input class="form-control" type="text" placeholder="Enter Email" id="emailInput" tabindex="2" />
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>We have many different types of sponsorship opportunities available. Learn more <a href="sponsors.html">here</a>.</p>
                     </div>
-                    <div class="form-group col-md-12">
-                        <label for="messageInput">Message</label>
-                        <textarea class="form-control" name="message" id="messageInput" rows="6" placeholder="Enter Message" tabindex="3"></textarea>
-                        <br/>
-                        <button type="submit" value="Send" class="btn btn-primary" tabindex="4">Send Message</button>
-                    </div>
-                    <input type="text" name="_gotcha" style="display: none" />
-                </form>
+                </div>
             </div>
         </div>
+        
+        <div id="alumni" class="row padded">
+            <div class="col-sm-offset-1 col-md-10">
+                <h1 align="center">Alumni</h1>
+                <h4 align="center">Featured Alumna</h4>
+                <div class="row">
+                </div>
+                <p>If you are an alumni and would like to learn how to get involved with WCS, learn more <a href="alumni.html">here</a>.</p>
+            </div>
+        </div>
+        
+        <div id="contact" class="row padded">
+            <div class="col-sm-offset-1 col-md-10">
+                <h1 align="center">Contact Us</h1>
+                <div class="row">
+                    <form role="form" action="http://formspree.io/illinoiswcs@gmail.com" method="POST">
+                        <div class="form-group col-md-6">
+                            <label for="nameInput">Name</label>
+                            <input class="form-control" type="text" placeholder="Enter Name" id="nameInput" tabindex="1"/>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="emailInput">Email</label>
+                            <input class="form-control" type="text" placeholder="Enter Email" id="emailInput" tabindex="2" />
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="subjectInput">Subject</label>
+                            <input class="form-control" type="text" placeholder="Enter Subject" id="subjectInput" tabindex="3" />
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="messageInput">Message</label>
+                            <textarea class="form-control" name="message" id="messageInput" rows="6" placeholder="Enter Message" tabindex="4"></textarea>
+                            <br/>
+                            <button type="submit" value="Send" class="btn btn-primary" tabindex="5">Send Message</button>
+                        </div>
+                        <input type="text" name="_gotcha" style="display: none" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        
         <footer>
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p>Women in Computer Science</p>
+                    <p>1318 Siebel Center</p>
+                    <p>201 North Goodwin Avenue</p>
+                    <p>Urbana, IL 61801-2302</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Contact us at:</p>
+                    <h5><a href="mailto:contact@illinoiswcs.org">contact@illinoiswcs.org</a></h5>
+                </div>
+                <div class="col-md-4">
+                    <ul id="socialMediaLinks" class="text-center">
+                        <li><a href="http://www.facebook.com/illinoiswcs"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="http://www.twitter.com/illinoiswcs"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="http://www.linkedin.com/groups?home=&gid=4473443"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                        <li><a href="http://www.instagram.com/illinoiswcs"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
-        <script type="text/javascript" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/lib/jquery-easing-original/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
 </html>
