@@ -59,7 +59,7 @@ footer p {
 
 @media (min-width: 767px) {
   /* line 16, ../sass/navbar.scss */
-  .navbar {
+  .mainNav {
     padding: 20px 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;

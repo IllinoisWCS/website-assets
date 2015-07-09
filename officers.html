@@ -21,7 +21,7 @@
         <script type="text/javascript" src="assets/js/officers.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="otherNavbar navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
@@ -38,10 +38,14 @@
         <script type="text/x-mustache" id="officerTemplate">
             <div class="row">
                 {{#prez}}
-                <div class="col-md-6 officerParent">
-                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}">
-                    </img>
-                    <h1 align="center">{{firstname}} {{lastname}}</h1>
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}"></img>
+                        <div class="caption">
+                            <h1 align="center">{{firstname}} {{lastname}}</h1>
+                            <h3 align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal fade" id="{{netid}}">
                     <div class="modal-dialog">
@@ -51,13 +55,31 @@
                                 <h4 class="modal-title">{{firstname}} {{lastname}} - {{position}}</h4>
                             </div>
                             <div class="modal-body">
-                                <ul>
-                                    <li>{{major}}, {{year}}</li>
-                                    <li>Interests: {{interests}}</li>
-                                    <li>Previous Experience: {{experience}}</li>
-                                    <li>Hobbies: {{hobbies}}</li>
-                                    <li>Ask {{firstname}} about: {{ask}}</li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}">
+                                        </img>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><b>{{major}}</b></p>
+                                        <p><b>{{year}}</b></p>
+                                        <p><b>Interests: </b>
+                                        {{#interests}}
+                                            <span class="label label-default">{{.}}</span> 
+                                        {{/interests}}</p>
+                                        <p><b>Hobbies: </b>
+                                        {{#hobbies}}
+                                            <span class="label label-success">{{.}}</span>
+                                        {{/hobbies}}</p>
+                                        <br/>
+                                        <p><b>Fun fact: </b>{{fact}}</p>
+                                        <p><b>From: </b>{{place}}</p>
+                                        <p><b>Ask me about: </b></p>
+                                        {{#ask}}
+                                            <span class="label label-primary">{{.}}</span>
+                                        {{/ask}}
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -69,10 +91,14 @@
             </div>
             <div class="row">
                 {{#admin}}
-                <div class="col-md-4 officerParent">
-                    <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}">
-                    </img>
-                    <h1 align="center">{{firstname}} {{lastname}}</h1>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}"></img>
+                        <div class="caption">
+                            <h1 align="center">{{firstname}} {{lastname}}</h1>
+                            <h3 align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal fade" id="{{netid}}">
                     <div class="modal-dialog">
@@ -82,13 +108,31 @@
                                 <h4 class="modal-title">{{firstname}} {{lastname}} - {{position}}</h4>
                             </div>
                             <div class="modal-body">
-                                <ul>
-                                    <li>{{major}}, {{year}}</li>
-                                    <li>Interests: {{interests}}</li>
-                                    <li>Previous Experience: {{experience}}</li>
-                                    <li>Hobbies: {{hobbies}}</li>
-                                    <li>Ask {{firstname}} about: {{ask}}</li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="officerPicture" src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}">
+                                        </img>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><b>{{major}}</b></p>
+                                        <p><b>{{year}}</b></p>
+                                        <p><b>Interests: </b>
+                                        {{#interests}}
+                                            <span class="label label-default">{{.}}</span> 
+                                        {{/interests}}</p>
+                                        <p><b>Hobbies: </b>
+                                        {{#hobbies}}
+                                            <span class="label label-success">{{.}}</span>
+                                        {{/hobbies}}</p>
+                                        <br/>
+                                        <p><b>Fun fact: </b>{{fact}}</p>
+                                        <p><b>From: </b>{{place}}</p>
+                                        <p><b>Ask me about: </b></p>
+                                        {{#ask}}
+                                            <span class="label label-primary">{{.}}</span>
+                                        {{/ask}}
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -137,6 +181,5 @@
 
         
         <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
 </html>

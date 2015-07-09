@@ -8,13 +8,29 @@ $(document).ready(function() {
 	      "email": "rong2@illinois.edu",
 	      "netid": "rong2",
 	      "year": "Senior",
-	      "major": "CS in ENG, Minor in Art + Design",
-	      "interests": "Distributed Systems, HCI",
-	      "experience": "JPMorgan, Applications Developer Intern, Summer 2013 & 2014\nUIUC, CS242 TA, Spring 2015\nUIUC, NCSA SPIN Intern, Spring 2015\nTwitter, Software Development Intern, Summer 2015",
-	      "hobbies": "Binge drinking coffee, Coding, Drawing",
+	      "major": "Computer Science, Minor in Art + Design",
+	      "interests": [
+	      	"Distributed Systems",
+	      	"HCI"
+	      ],
+	      "experience": [
+	      	"JPMorgan, Applications Developer Intern, Summer 2013 & 2014",
+	      	"UIUC, CS242 TA, Spring 2015",
+	      	"UIUC, NCSA SPIN Intern, Spring 2015",
+	      	"Twitter, Software Development Intern, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"Binge drinking coffee",
+	      	"Coding",
+	      	"Drawing"
+	      ],
 	      "fact": "I still play Neopets more often than I care to admit. ",
-	      "place": "Urbana, USA",
-	      "ask": "being a TA for CS 242, interning at JPMorgan Chase + Twitter, doing independent studies with professors"
+	      "place": "Urbana, IL",
+	      "ask": [
+	      	"being a TA for CS 242",
+	      	"interning at JPMorgan Chase + Twitter",
+	      	"doing independent studies with professors"
+	      ]
 	    },
 	    {
 	      "position": "Vice President",
@@ -23,13 +39,26 @@ $(document).ready(function() {
 	      "email": "hxkoh2@illinois.edu",
 	      "netid": "hxkoh2",
 	      "year": "Senior",
-	      "major": "Major: CS in ENG\nMinor: Business",
-	      "interests": "Artificial Intelligence, Security, UI/UX",
-	      "experience": "Microsoft, Software Engineering Intern, May-Aug 2015;\nMicrosoft, Explore Intern, May-Aug 2014;\nUIUC, Independent Study with Professor Heeren, 2014-present;\nUIUC, Independent Study with Professor Angrave, 2013-2014\n",
-	      "hobbies": "Playing with dogs :);\nWatching TV;\nPiano",
+	      "major": "Computer Science, Minor in Business",
+	      "interests": [
+	      	"Artificial Intelligence",
+	      	"Security",
+	      	"UI/UX"
+	      ],
+	      "experience": [
+	      	"Microsoft, Software Engineering Intern, Summer 2015;",
+	      	"Microsoft, Explore Intern, Summer 2014;",
+	      	"UIUC, Independent Study with Professor Heeren, 2014-present;",
+	      	"UIUC, Independent Study with Professor Angrave, 2013-2014"
+	      ],
+	      "hobbies": [
+	      	"Playing with dogs",
+	      	"Watching TV",
+	      	"Piano"
+	      ],
 	      "fact": "I have a twin sister!",
 	      "place": "Foster City, CA",
-	      "ask": ""
+	      "ask": []
 	    }
 	  ],
 	  "admin": [
@@ -41,12 +70,35 @@ $(document).ready(function() {
 	      "netid": "lseller2",
 	      "year": "Senior",
 	      "major": "Double Major in CS + Statistics, Psychology",
-	      "interests": "Artificial Intelligence",
-	      "experience": "Summer 2013 Technical Intern Foresight ROI \nSummer 2014 Software Intern Apollo Education Group\n2014-2015 CITES Helpdesk Consultant",
-	      "hobbies": "Video Games (LoL, Pokemon, various RPGs)\nViolin\nPlaying with my 3 cats (and the 2 other cats that live with us)\nSleeping\nPizza",
-	      "fact": "I am a black belt in Tae-Kwon-Do, and am also a certified scuba diving instructor. ",
+	      "interests": [
+	      	"Artificial Intelligence"
+	      ],
+	      "experience": [
+	      	"Foresight ROI, Technical Intern, Summer 2013",
+	      	"Apollo Education Group, Software Intern, Summer 2014",
+	      	"CITES, Helpdesk Consultant, 2014-2015"
+	      ],
+	      "hobbies": [
+	      	"Video Games (LoL, Pokemon, various RPGs)",
+	      	"Violin",
+	      	"Playing with the 5 cats that live with me",
+	      	"Sleeping",
+	      	"Pizza"
+	      ],
+	      "fact": "I am a black belt in Tae-Kwon-Do, and am also a certified scuba diving instructor.",
 	      "place": "Barrington, IL",
-	      "ask": ""
+	      "ask": [
+	      	"CS 125",
+	      	"CS 225",
+	      	"CS 233",
+	      	"CS THEORY (173, 373, 473)",
+	      	"CS 423",
+	      	"CS 411",
+	      	"Stats classes",
+	      	"All calc",
+	      	"linear algebra",
+	      	"differential equations"
+	      ]
 	    },
 	    {
 	      "position": "Treasurer",
@@ -55,13 +107,24 @@ $(document).ready(function() {
 	      "email": "hanchen2@illinois.edu",
 	      "netid": "hanchen2",
 	      "year": "Junior",
-	      "major": "CS in ENG",
-	      "interests": "Data Structures, Algorithms, and Security",
-	      "experience": "CS 225 Teaching Assistant",
-	      "hobbies": "Playing computer games, Building PCs, Watching Netflix/animes, Sleeping",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Data Structures",
+	      	"Algorithms",
+	      	"Security"
+	      ],
+	      "experience": [
+	      	"UIUC, CS 225 Teaching Assistant 2014-present"
+	      ],
+	      "hobbies": [
+	      	"Playing computer games",
+	      	"Building PCs",
+	      	"Watching Netflix/animes",
+	      	"Sleeping"
+	      ],
 	      "fact": "I lived in Canada for 7 months.",
-	      "place": "Arlington Heights, USA",
-	      "ask": ""
+	      "place": "Arlington Heights, IL",
+	      "ask": []
 	    },
 	    {
 	      "position": "Webmaster",
@@ -70,13 +133,37 @@ $(document).ready(function() {
 	      "email": "elchao2@illinois.edu",
 	      "netid": "elchao2",
 	      "year": "Junior",
-	      "major": "CS in ENG",
-	      "interests": "Full-Stack Web Development, CS Education and Educational Tools, Software Engineering, Data",
-	      "experience": "Paycor Inc., IT Application Intern, Summer 2012\nP&G, GBS-HRSS IT Intern, Summer 2013\nkCura, Software Engineering Intern, Summer 2014\nDow Chemical Company, Systems Intern, School-Year 2014-2015\nIntuit, Software Engineering Intern, Summer 2015",
-	      "hobbies": "Listening to Music, Singing at the top of my lungs, Reading, Writing, Going Ice Skating, Web Development",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Full-Stack Web Development",
+	      	"CS Education and Educational Tools",
+	      	"Software Engineering",
+	      	"Data"
+	      ],
+	      "experience": [
+	      	"Paycor Inc., IT Application Intern, Summer 2012",
+	      	"P&G, GBS-HRSS IT Intern, Summer 2013",
+	      	"kCura, Software Engineering Intern, Summer 2014",
+	      	"Dow Chemical Company, Systems Intern, School-Year 2014-2015",
+	      	"Intuit, Software Engineering Intern, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"Listening to Music",
+	      	"Singing at the top of my lungs",
+	      	"Reading",
+	      	"Writing",
+	      	"Going Ice Skating",
+	      	"Web Development"
+	      ],
 	      "fact": "I have a broken nose that has yet to be fixed. So yes, I need a nose job. :)",
 	      "place": "West Chester, OH",
-	      "ask": "TA'ing CS225, working at Research Park, being LGBTQ in tech, working at Intuit, being a WIE Orientation mentor, self-publishing on Medium"
+	      "ask": [
+	      	"TA'ing CS225",
+	      	"working at Research Park",
+	      	"being LGBTQ in tech",
+	      	"working at Intuit",
+	      	"being a WIE Orientation mentor"
+	      ]
 	    },
 	    {
 	      "position": "Academic Chair",
@@ -85,13 +172,32 @@ $(document).ready(function() {
 	      "email": "rsturm2@illinois.edu",
 	      "netid": "rsturm2",
 	      "year": "Junior",
-	      "major": "Computer Science in Engineering",
-	      "interests": "HCI, Data Mining, Security",
-	      "experience": "Thomas Jefferson High School, Teaching Assistant, Summer 2011\nCapitol Information Group, IT Intern, Summers 2011-2014\nUniversity of Illinois, Teaching Assistant, 2015-current\nQuantlab Financial, Technology Intern, Summer 2015",
-	      "hobbies": "Writing, reading comic books, watching movies and TV shows.",
-	      "fact": "I have an amazing memories but I waste it all on movie quotes and actors' filmographies.",
-	      "place": "McLean, Virginia",
-	      "ask": "CS233 (class or TAing), high frequency trading, interning in Texas, working through shyness to talk to recruiters, movies and comic books"
+	      "major": "Computer Science",
+	      "interests": [
+	      	"HCI",
+	      	"Data Mining",
+	      	"Security"
+	      ],
+	      "experience": [
+	      	"Thomas Jefferson High School, Teaching Assistant, Summer 2011",
+	      	"Capitol Information Group, IT Intern, Summers 2011-2014",
+	      	"University of Illinois, Teaching Assistant, 2015-present",
+	      	"Quantlab Financial, Technology Intern, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"Writing",
+	      	"reading comic books",
+	      	"watching movies and TV shows."
+	      ],
+	      "fact": "I have an amazing memory but I waste it all on movie quotes and actors' filmographies.",
+	      "place": "McLean, VA",
+	      "ask": [
+	      	"CS233 (class or TAing)",
+	      	"high frequency trading",
+	      	"interning in Texas",
+	      	"working through shyness to talk to recruiters",
+	      	"movies and comic books"
+	      ]
 	    },
 	    {
 	      "position": "Outreach Chair",
@@ -100,13 +206,20 @@ $(document).ready(function() {
 	      "email": "bifft2@illinois.edu",
 	      "netid": "bifft2",
 	      "year": "Junior",
-	      "major": "CS in ENG\nLinguistics Minor",
+	      "major": "Computer Science, Minor in Linguistics",
 	      "interests": "NLP",
-	      "experience": "State Farm Research and development Center, Champaign, IL\nSystems Intern\nAugust 2013 - May 2014\n\nBank of America, Chicago, IL\nTechnology Developer and Analyst\nSummer 2014",
-	      "hobbies": "Running, Cooking, Hanging out with friends and family",
-	      "fact": "I have a huge family--between 40 and 50 first cousins!",
-	      "place": "Forrest, IL US",
-	      "ask": ""
+	      "experience": [
+	      	"State Farm Research and Development Center, Systems Intern, School Year 2013-2014",
+	      	"Bank of America, Technology Developer and Analyst, Summer 2014"
+	      ],
+	      "hobbies": [
+	      	"Running",
+	      	"Cooking",
+	      	"Hanging out with friends and family"
+	      ],
+	      "fact": "I have a huge family-between 40 and 50 first cousins!",
+	      "place": "Forrest, IL",
+	      "ask": []
 	    },
 	    {
 	      "position": "Mentoring Chair",
@@ -115,13 +228,23 @@ $(document).ready(function() {
 	      "email": "vkhande2@illinois.edu",
 	      "netid": "vkhande2",
 	      "year": "Junior",
-	      "major": "Computer Science in ENG",
-	      "interests": "Databases, System Programming",
-	      "experience": "Place : Tata Consultancy Services, Kolkata India \nYear : Summer 2014\nPosition : Developer\n\nPlace: Microsoft\nYear: Upcoming Summer\nPosition : Intern",
-	      "hobbies": "Dancing, Reading, Interacting with new people ",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Databases",
+	      	"System Programming"
+	      ],
+	      "experience": [
+	      	"Tata Consultancy Services, Developer, Summer 2014",
+	      	"Microsoft, Intern, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"Dancing",
+	      	"Reading",
+	      	"Interacting with new people"
+	      ],
 	      "fact": "Dance is my stress buster! I absolutely love dancing, which includes dancing between coding if needed to destress! ",
-	      "place": "Champaign",
-	      "ask": ""
+	      "place": "Calcutta, India",
+	      "ask": []
 	    },
 	    {
 	      "position": "Tech Team Chair",
@@ -131,12 +254,36 @@ $(document).ready(function() {
 	      "netid": "akgul1",
 	      "year": "Junior",
 	      "major": "Computer Engineering",
-	      "interests": "Embedded Systems, Operating Systems, Security",
-	      "experience": "GNU/Linux OS Dev Intern at CoreOS, starting Summer 2015,\nBIOS Development Intern at Intel, August 2013 - June 2014,\nAnalog Verification Intern at Intel, June 2012 - January 2013,\nECE 110 Teaching Assistant, UIUC, August 2011 - May 2012,\nComputer Engineering Co-op at AMD, May 2011 - August 2011,\nWeb R&D Intern at Wolfram, December 2010 - April 2011,\nParticle Physics Research Mentorship, Fermilab, August 2008 - May 2010\nITS Lead Student Hardware Technician, IMSA, November 2008 - May 2010\n",
-	      "hobbies": "Playing with circuits, developing cool software and hardware, singing, guitar, E&M music, teaching, math, graphic design, competitive dance games, figure skating, and more that I couldn't possibly list! :)",
+	      "interests": [
+	      	"Embedded Systems",
+	      	"Operating Systems",
+	      	"Security"
+	      ],
+	      "experience": [
+	      	"CoreOS, GNU/Linux OS Dev Intern, Summer 2015",
+	      	"Intel, BIOS Development Intern, August 2013 - June 2014",
+	      	"Intel, Analog Verification Intern, June 2012 - January 2013",
+	      	"UIUC, ECE 110 Teaching Assistant, August 2011 - May 2012",
+	      	"AMD, Computer Engineering Co-op, May 2011 - August 2011",
+	      	"Wolfram, Web R&D Intern, December 2010 - April 2011,",
+	      	"Fermilab, Particle Physics Research Mentorship, August 2008 - May 2010",
+	      	"IMSA, ITS Lead Student Hardware Technician, November 2008 - May 2010"
+	      ],
+	      "hobbies": [
+	      	"Playing with circuits",
+	      	"developing cool software and hardware",
+	      	"singing",
+	      	"guitar",
+	      	"E&M music",
+	      	"teaching",
+	      	"math",
+	      	"graphic design",
+	      	"competitive dance games",
+	      	"figure skating"
+	      ],
 	      "fact": "I currently own and maintain 5 Dance Dance Revolution style arcade machines, which are all privately shared or generate revenue in public venues. I like to play on them too, of course! ",
 	      "place": "Seattle, WA",
-	      "ask": ""
+	      "ask": []
 	    },
 	    {
 	      "position": "Social Chair",
@@ -145,13 +292,27 @@ $(document).ready(function() {
 	      "email": "jrcheng3@illinois.edu",
 	      "netid": "jrcheng3",
 	      "year": "Junior",
-	      "major": "CS in ENG",
-	      "interests": "Graphics, Data, HCI",
-	      "experience": "BTwin (Lille, France)\nTest Engineer Intern\nJuly 2014",
-	      "hobbies": "looking at puppies on the internet\nplaying cards\nbaking",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Graphics",
+	      	"Data",
+	      	"HCI"
+	      ],
+	      "experience": [
+	      	"BTwin, Test Engineer Intern, July 2014",
+	      	"Software Developer Intern, Dow Chemical Company, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"looking at puppies on the internet",
+	      	"playing cards",
+	      	"baking"
+	      ],
 	      "fact": "I like cats but I'm allergic to them :(",
-	      "place": "Barrington, IL, USA",
-	      "ask": ""
+	      "place": "Barrington, IL",
+	      "ask": [
+	      	"summer study abroad in France",
+	      	"summer on campus"
+	      ]
 	    },
 	    {
 	      "position": "Corporate Chair",
@@ -160,13 +321,31 @@ $(document).ready(function() {
 	      "email": "cyleung2@illinois.edu",
 	      "netid": "cyleung2",
 	      "year": "Sophomore",
-	      "major": "CS in ENG",
-	      "interests": "Security, AI",
-	      "experience": "State Farm (IT/System Intern) Nov 2013 - Dec 2014\nGroupon (SWE Intern) Summer 2015",
-	      "hobbies": "Badminton, Napping, Playing the flute",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Security",
+	      	"Artificial Intelligence"
+	      ],
+	      "experience": [
+	      	"State Farm, IT/System Intern, Nov 2013 - Dec 2014",
+	      	"Groupon, Software Engineering Intern, Summer 2015"
+	      ],
+	      "hobbies": [
+	      	"Badminton",
+	      	"Napping",
+	      	"Playing the flute"
+	      ],
 	      "fact": "I had a British passport, but I have never been to England",
-	      "place": "Champaign",
-	      "ask": ""
+	      "place": "Milpitas, CA",
+	      "ask": [
+	      	"CS196",
+	      	"Admitted/Incoming Student Outreach",
+	      	"CS @ ILLINOIS Splash",
+	      	"Groupon",
+	      	"State Farm",
+	      	"non-profit works",
+	      	"Android"
+	      ]
 	    },
 	    {
 	      "position": "Publicity Chair",
@@ -176,12 +355,34 @@ $(document).ready(function() {
 	      "netid": "psenka2",
 	      "year": "Junior",
 	      "major": "Computer Science ENG",
-	      "interests": "Big Data, UI/UX, Web Development, Computer Graphics",
-	      "experience": "University of Illinois - Micro and Nanotechnology Laboratory, Reserach Intern, Summer 2014; CME Group, Development Intern, Summer 2015; NCSA, Undergraduate Research Assistant, Fall 2015",
-	      "hobbies": "Writing, Cooking, Playing Volleyball, Listening to Music, Hanging with Friends",
+	      "interests": [
+	      	"Big Data",
+	      	"UI/UX",
+	      	"Web Development",
+	      	"Computer Graphics"
+	      ],
+	      "experience": [
+	      	"UIUI Micro and Nanotechnology Laboratory, Reserach Intern, Summer 2014",
+	      	"CME Group, Development Intern, Summer 2015",
+	      	"NCSA, Undergraduate Research Assistant, Fall 2015"
+	      ],
+	      "hobbies": [
+	      	"Writing",
+	      	"Cooking",
+	      	"Playing Volleyball",
+	      	"Listening to Music",
+	      	"Hanging with Friends"
+	      ],
 	      "fact": "I have a mild phobia of fish.",
 	      "place": "Chicago, IL",
-	      "ask": ""
+	      "ask": [
+	      	"Getting research",
+	      	"workload management",
+	      	"internships",
+	      	"Greek life",
+	      	"apartments",
+	      	"life"
+	      ]
 	    },
 	    {
 	      "position": "Alumni Chair",
@@ -190,13 +391,33 @@ $(document).ready(function() {
 	      "email": "sanka3@illinois.edu",
 	      "netid": "sanka3",
 	      "year": "Sophomore",
-	      "major": "Computer Science in ENG",
-	      "interests": "Artificial Intelligence and Machine Learning",
-	      "experience": "Previous:\nAarki, Inc - Business Development Intern - June to August 2012\nPeel Technologies - Engineering Intern - June to August 2013\nUpcoming:\nZeta Interactive - Engineering Intern - June to August 2015",
-	      "hobbies": "Drawing portraits, singing, piano, tennis, reading books, biking, writing ",
+	      "major": "Computer Science",
+	      "interests": [
+	      	"Artificial Intelligence",
+	      	"Machine Learning"
+	      ],
+	      "experience": [
+	      	"Aarki, Inc, Business Development Intern, Summer 2012",
+	      	"Peel Technologies, Engineering Intern, Summer 2013",
+	      	"Zeta Interactive, Engineering Intern, Summer 2015",
+	      ],
+	      "hobbies": [
+	      	"Drawing portraits",
+	      	"singing",
+	      	"piano",
+	      	"tennis",
+	      	"reading books",
+	      	"biking",
+	      	"writing"
+	      ],
 	      "fact": "I love singing obnoxiously in empty elevators and pretending nothing happened when someone enters. ",
-	      "place": "Cupertino, CA, USA",
-	      "ask": ""
+	      "place": "Cupertino, CA",
+	      "ask": [
+	      	"Interning at a startup",
+	      	"taking CS 173 and 225",
+	      	"writing",
+	      	"What not to do as a freshman 101"
+	      ]
 	    },
 	    {
 	      "position": "Grad Chair",
@@ -207,11 +428,20 @@ $(document).ready(function() {
 	      "year": "Grad",
 	      "major": "B.S/M.S Computer Science",
 	      "interests": "Computer Vision",
-	      "experience": "Previous - Undergrad TA for CS 173\nCurrent - Grad TA for CS 242\nComputer Vision Research with Derek Hoeim",
-	      "hobbies": "Cooking , Reading , android development, volunteering ",
-	      "fact": "I do math in my head using an imaginary abacus. ",
+	      "experience": [
+	      	"UIUC, Undergrad TA for CS 173",
+	      	"Grad TA for CS 242",
+	      	"Computer Vision Research with Derek Hoeim"
+	      ],
+	      "hobbies": [
+	      	"Cooking",
+	      	"Reading",
+	      	"Android development",
+	      	"Volunteering"
+	      ],
+	      "fact": "I do math in my head using an imaginary abacus.",
 	      "place": "Bangalore,India",
-	      "ask": ""
+	      "ask": []
 	    }
 	  ]
 	}
