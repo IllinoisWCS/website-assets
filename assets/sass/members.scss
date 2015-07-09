@@ -50,7 +50,7 @@
 }
 
 #memberportal {
-  background-image: url('../img/members/memberPortal.jpg');
+  background-image: url('../img/members/memberportal.jpg');
   &:hover {
     @include gradientBackground('../img/members/memberportal.jpg');
   }
