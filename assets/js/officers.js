@@ -58,7 +58,11 @@ $(document).ready(function() {
 	      ],
 	      "fact": "I have a twin sister!",
 	      "place": "Foster City, CA",
-	      "ask": []
+	      "ask": [
+	      	"Interning at Microsoft", 
+	      	"independent study", 
+	      	"studying abroad"
+	      ]
 	    }
 	  ],
 	  "admin": [
@@ -124,7 +128,11 @@ $(document).ready(function() {
 	      ],
 	      "fact": "I lived in Canada for 7 months.",
 	      "place": "Arlington Heights, IL",
-	      "ask": []
+	      "ask": [
+	      	"TA CS 225 and 205", 
+	      	"transfer student", 
+	      	"course dev with Cinda Heeren"
+	      ]
 	    },
 	    {
 	      "position": "Webmaster",
@@ -160,8 +168,10 @@ $(document).ready(function() {
 	      "ask": [
 	      	"TA'ing CS225",
 	      	"working at Research Park",
-	      	"being LGBTQ in tech",
+	      	"identifying as LGBTQ",
 	      	"working at Intuit",
+	      	"living in WIMSE",
+	      	"being involved in SWE",
 	      	"being a WIE Orientation mentor"
 	      ]
 	    },
@@ -219,7 +229,17 @@ $(document).ready(function() {
 	      ],
 	      "fact": "I have a huge family-between 40 and 50 first cousins!",
 	      "place": "Forrest, IL",
-	      "ask": []
+	      "ask": [
+	      	"working in Research Park", 
+	      	"interning at Bank of America", 
+	      	"courseload and course selection", 
+	      	"CS 125", 
+	      	"CS 225", 
+	      	"the WIMSE LLC", 
+	      	"attending GHC", 
+	      	"transferring from LAS to Engineering", 
+	      	"Grey's Anatomy"
+	      ]
 	    },
 	    {
 	      "position": "Mentoring Chair",
