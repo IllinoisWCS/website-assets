@@ -19,9 +19,10 @@
         <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="assets/lib/mustache/mustache.min.js"></script>
         <script type="text/javascript" src="assets/js/officers.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
-    <body>
-        <nav class="otherNavbar navbar navbar-default navbar-fixed-top">
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <nav class="mainNav navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
@@ -31,6 +32,16 @@
                     <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/"><img src="assets/img/wcs/wcsLogo.png" class="img-responsive"></img></a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#ask">Ask Us About</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -144,16 +155,16 @@
             </div>
         </script>
 
-        <div id="meetOfficers" class="row padded">
+        <div class="row" id="meetOfficers">
             <div class="col-sm-offset-1 col-md-10">
                 <h1 align="center">Meet Our Officers</h1>
                 <p align="center">Click each officer's picture to learn more about them</p>
             </div>
-        </div>
-
-        <div class="row padded">
             <div id="allOfficers" class="col-sm-offset-1 col-md-10">
             </div>
+        </div>
+
+        <div class="row" id="ask">
         </div>
         
         <!--<footer class="padded">
