@@ -1,10 +1,14 @@
 /* Main Components */
-@import "main-components.scss";
-@import "navbar.scss";
+@import "variables";
+@import "main-components";
+@import "navbar";
 
 /* Individual Divs */
-@import "home.scss";
-@import "about.scss";
-@import "members.scss";
-@import "sponsors.scss";
-@import "officers.scss";
+@import "home";
+@import "about";
+@import "members";
+@import "sponsors";
+@import "officers";
+@import "alumni";
+@import "contact";
+@import "footer";

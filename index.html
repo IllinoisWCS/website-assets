@@ -5,16 +5,27 @@
         
         <meta name="description" content="Women in Computer Science is an organization under CS@Illinois that strives to provide opportunities and a community for female CS students at University of Illinois."/>
         <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta property="og:title" content="Women in Computer Science"/>
         <meta property="og:type" content="company"/>
         <meta property="og:site_name" content="Women in Computer Science"/>
         <meta property="og:url" content="www.illinoiswcs.org"/>
         <meta property="og:image" content=""/>
+
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/lib/fontawesome/css/font-awesome.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+
+        <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/lib/jquery-easing-original/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/lib/mustache/mustache.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/alumni.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <nav class="mainNav navbar navbar-default navbar-fixed-top">
@@ -55,37 +66,27 @@
                 </div>
             </div>
         </nav>
-        
-        <div id="home">
+
+        <div id="home" class="container fill">
+            <div class="overlay">
+                <h1> Welcome to WCS @ Illinois!</h1>
+            </div>
             <div id="slideshow" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="active item">
-                        <img src="assets/img/slideshow/allofficers.jpg" class="img-responsive">
-                        </img>
+                        <div class="fill" id="officerCarousel"></div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/slideshow/chictech.jpg" class="img-responsive">
-                        </img>
+                        <div class="fill" id="chictechCarousel"></div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/slideshow/slideshow9.png" class="img-responsive">
-                        </img>
+                        <div class="fill" id="banquetCarousel"></div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/slideshow/banquet.jpg" class="img-responsive">
-                        </img>
+                        <div class="fill" id="splashCarousel"></div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/slideshow/slideshow9.jpg" class="img-responsive">
-                        </img>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/slideshow/splash.jpg" class="img-responsive">
-                        </img>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/slideshow/banquet2.jpg" class="img-responsive">
-                        </img>
+                        <div class="fill" id="banquet2Carousel"></div>
                     </div>
                 </div>
             </div>
@@ -99,17 +100,20 @@
         </div>
         
         <div id="officers">
-            <a href="officers.html"><button type="button" id="meetOfficersBtn" class="btn btn-primary btn-lg">Meet Our Officers</button></a>
+            <div class="btnContainer">
+                <a href="officers.html"><button type="button" id="meetOfficersBtn" class="btn"><h2>Meet Our Officers</h2></button></a>
+            </div>
         </div>
         
         <div id="members" class="row padded">
             <div class="col-sm-offset-1 col-md-10">
                 <h1 align="center">Members</h1>
+                <p align="center">More information coming soon!</p>
                 <div class="row">
-                    <a href="/TechTeam" target="_blank"><div class="col-md-3"><div class="memberImage" id="techTeam"><h2>Tech Team</h2></div></div></a>
-                    <a href="/Mentoring" target="_blank"><div class="col-md-3"><div class="memberImage" id="mentoring"><h2>Mentoring</h2></div></div></a>
-                    <a href="/Outreach" target="_blank"><div class="col-md-3"><div class="memberImage" id="outreach"><h2>Outreach</h2></div></div></a>
-                    <div class="col-md-3"><div class="memberImage" id="memberportal"><h2>Member Portal (Coming Soon)</h2></div></div>
+                    <a href="/techteam" target="_blank"><div class="col-md-3"><div class="memberImage" id="techTeam"><p><b>Tech Team</b></p></div></div></a>
+                    <a href="/mentoring" target="_blank"><div class="col-md-3"><div class="memberImage" id="mentoring"><p><b>Mentoring</b></p></div></div></a>
+                    <a href="/outreach" target="_blank"><div class="col-md-3"><div class="memberImage" id="outreach"><p><b>Outreach</b></p></div></div></a>
+                    <div class="col-md-3"><div class="memberImage" id="memberportal"><p><b>Academic Resources</b></p></div></div>
                 </div>
             </div>
         </div>
@@ -122,27 +126,36 @@
                     <div class="col-md-2">
                         <img class="sponsor-small" src="assets/img/logos/cisco.png"></img>
                     </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>We have many different types of sponsorship opportunities available. Learn more <a href="/">here</a>.</p>
+                        <p>We have many different types of sponsorship opportunities available. Learn more <a href="https://docs.google.com/document/d/1rcVNyJjD_S43vrQbGVoKmYzzvAd20d3DkkgOPc_8PQs/edit?usp=sharing" target="_blank">here</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script type="text/x-mustache" id="alumniTemplate">
+            {{#featured.0}}
+                <div class="col-md-4 alumniImage">
+                    <img src="{{img}}"></img>
+                </div>
+                <div class="col-md-8 alumniText">
+                    <div>
+                        <h4 align="center">{{name}}</h4>
+                        <p><b>Degree/Graduation Year</b>: {{degree}}, {{grad}}</p>
+                        <p><b>Involvement</b>: {{involvement}}</p>
+                        <p><b>Where She Is Now</b>: {{where}}</p>
+                    </div>
+                </div>
+            {{/featured.0}}
+        </script>
         
         <div id="alumni" class="row padded">
             <div class="col-sm-offset-1 col-md-10">
                 <h1 align="center">Alumni</h1>
-                <h4 align="center">Featured Alumna</h4>
-                <div class="row">
-                </div>
-                <p>If you are an alumni and would like to learn how to get involved with WCS, learn more <a href="/Alumni">here</a>.</p>
+                <div class="row" id="featuredAlumni"></div>
+                <div class="row"><div class="col-md-12"><p align="center">If you are an alumni and would like to learn how to get involved with WCS, learn more <a href="/Alumni">here</a>.</p></div></div>
             </div>
         </div>
         
@@ -185,22 +198,17 @@
                 </div>
                 <div class="col-md-4">
                     <p>Contact us at:</p>
-                    <h5><a href="mailto:contact@illinoiswcs.org">contact@illinoiswcs.org</a></h5>
+                    <p><b><a href="mailto:contact@illinoiswcs.org">contact@illinoiswcs.org</a></b></p>
                 </div>
                 <div class="col-md-4">
                     <ul id="socialMediaLinks" class="text-center">
-                        <li><a href="http://www.facebook.com/illinoiswcs"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href="http://www.twitter.com/illinoiswcs"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="http://www.linkedin.com/groups?home=&gid=4473443"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                        <li><a href="http://www.instagram.com/illinoiswcs"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="http://www.facebook.com/illinoiswcs"><i class="fa fa-facebook-square fa-4x"></i></a></li>
+                        <li><a href="http://www.twitter.com/illinoiswcs"><i class="fa fa-twitter-square fa-4x"></i></a></li>
+                        <li><a href="http://www.linkedin.com/groups?home=&gid=4473443"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+                        <li><a href="http://www.instagram.com/illinoiswcs"><i class="fa fa-instagram fa-4x"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
-
-        <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/lib/jquery-easing-original/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
 </html>

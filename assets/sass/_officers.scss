@@ -1,0 +1,32 @@
+#officers {
+  background-image: url('../img/wcs/newofficers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  min-width: 100% !important;
+  @extend .center;
+  a {
+    color: $offblack;
+    &:hover {
+      color: $black;
+    }
+  }
+  .btn-container {
+    position: relative;
+    top: calc(50% - 40px);
+    transform: translateY(-50%);
+  }
+}
+
+.officerPicture {
+  width: 100%;
+  height: auto;
+}
+
+#meetOfficers {
+  padding-top: 5%;
+}

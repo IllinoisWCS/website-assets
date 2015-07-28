@@ -264,7 +264,13 @@ $(document).ready(function() {
 	      ],
 	      "fact": "Dance is my stress buster! I absolutely love dancing, which includes dancing between coding if needed to destress! ",
 	      "place": "Calcutta, India",
-	      "ask": []
+	      "ask": [
+	      	"CA for CS 125", 
+	      	"interning at Microsoft", 
+	      	"switching from CE to CS", 
+	      	"TA for ECE 110", 
+	      	"choosing easy gen-eds"
+	      ]
 	    },
 	    {
 	      "position": "Tech Team Chair",
@@ -464,7 +470,7 @@ $(document).ready(function() {
 	      "ask": []
 	    }
 	  ]
-	}
+	};
 
 	var output = Mustache.render($('#officerTemplate').html(), officers);
 	$('#allOfficers').html(output);

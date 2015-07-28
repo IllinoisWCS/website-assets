@@ -1,96 +1,174 @@
 /* Main Components */
-/* line 1, ../sass/main-components.scss */
 html {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 5, ../sass/main-components.scss */
 body {
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 11, ../sass/main-components.scss */
+h1 {
+  font-family: "Lobster", cursive !important;
+  font-weight: 500 !important;
+  font-size: 5em !important;
+  letter-spacing: 2px; }
+
+h2 {
+  font-family: "Lobster", cursive !important;
+  font-weight: 400 !important;
+  font-size: 3em !important;
+  letter-spacing: 2px; }
+
+h4 {
+  font-family: "Lobster", cursive !important;
+  font-size: 2em !important; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
 .padded {
-  padding: 2.5% 0 2.5% 0;
-}
+  padding: 2.5% 0 5% 0; }
 
-/* line 15, ../sass/main-components.scss */
 #socialMediaLinks {
   display: block;
-  padding-left: 0px;
-}
-/* line 19, ../sass/main-components.scss */
-#socialMediaLinks li {
-  display: inline;
-  margin: 10px;
-}
+  padding-left: 0px; }
+  #socialMediaLinks li {
+    display: inline;
+    margin: 10px; }
 
 /* Temporary */
-/* line 26, ../sass/main-components.scss */
 .filler {
   width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
 
-/* line 31, ../sass/main-components.scss */
-footer {
-  background-color: #eee;
-  padding: 5% 10% 5% 10%;
-}
-/* line 34, ../sass/main-components.scss */
-footer p {
-  margin: 0;
-}
+.center, .overlay, #officers, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-/* line 2, ../sass/navbar.scss */
 .navbar-brand img {
-  height: 45px;
+  height: 35px;
   padding: 0px;
-  margin: -12px;
-}
+  margin: -12px; }
 
-/* line 10, ../sass/navbar.scss */
-.navbar .container-fluid {
-  padding: 0 10% 0 10%;
-}
+.navbar {
+  background-color: #f8f8f8;
+  opacity: 0.8; }
+  .navbar .container-fluid {
+    padding: 0 10% 0 10%; }
+
+.nav {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
 
 @media (min-width: 767px) {
-  /* line 16, ../sass/navbar.scss */
   .mainNav {
     padding: 20px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  /* line 23, ../sass/navbar.scss */
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
   .top-nav-collapse {
-    padding: 0;
-  }
-}
-/* Individual Divs */
-/* line 2, ../sass/home.scss */
-.carousel-inner .item {
-  opacity: 0.75;
-  transition-property: opacity;
-  width: 100% !important;
-  height: 72.5vh !important;
-  overflow: hidden;
-}
-/* line 8, ../sass/home.scss */
-.carousel-inner .item img {
-  position: relative;
-  width: 100%;
-}
-/* line 14, ../sass/home.scss */
-.carousel-inner .active {
-  opacity: 1;
-}
+    padding: 0; } }
 
-/* line 1, ../sass/members.scss */
+/* Individual Divs */
+.carousel {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+  .carousel-inner .item {
+    opacity: 0.5;
+    transition-property: opacity;
+    width: 100% !important;
+    min-height: 100% !important;
+    overflow: hidden;
+    height: 100%; }
+    .carousel-inner .item img {
+      position: relative;
+      overflow: hidden;
+      height: 100%; }
+  .carousel-inner .active {
+    opacity: 0.75;
+    height: 100%; }
+
+.container {
+  text-align: center;
+  overflow: hidden; }
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover; }
+
+.overlay {
+  position: absolute;
+  z-index: 100;
+  top: calc(50% - 1.5em);
+  width: 100%; }
+
+#home {
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto;
+  height: 1000px; }
+  #home h1 {
+    color: #fff; }
+
+#officerCarousel {
+  background-image: url(../img/slideshow/allofficers.jpg); }
+
+#chictechCarousel {
+  background-image: url(../img/slideshow/chictech.jpg); }
+
+#banquetCarousel {
+  background-image: url(../img/slideshow/banquet.jpg); }
+
+#splashCarousel {
+  background-image: url(../img/slideshow/splash.jpg); }
+
+#banquet2Carousel {
+  background-image: url(../img/slideshow/banquet2.jpg); }
+
+#about h1, #about p {
+  color: #7d1935; }
+
+#about p {
+  font-size: 1.3em;
+  line-height: 150%; }
+
+#members {
+  background-color: #f5f3ee; }
+  #members a {
+    cursor: default; }
+
 .memberImage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,69 +177,49 @@ footer p {
   text-align: center;
   vertical-align: center;
   min-height: 50vh !important;
-  padding: -15 !important;
-}
-/* line 10, ../sass/members.scss */
-.memberImage h2 {
-  font-weight: 900;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 2rem;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
-}
+  padding: -15 !important; }
+  .memberImage p {
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    visibility: hidden; }
 
-/* line 31, ../sass/members.scss */
 #techTeam {
-  background-image: url("../img/members/techteam.jpg");
-}
-/* line 33, ../sass/members.scss */
-#techTeam:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/techteam.jpg");
-}
+  background-image: url("../img/members/techteam.jpg"); }
+  #techTeam:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/techteam.jpg"); }
 
-/* line 38, ../sass/members.scss */
 #mentoring {
-  background-image: url("../img/members/mentoring.jpg");
-}
-/* line 40, ../sass/members.scss */
-#mentoring:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/mentoring.jpg");
-}
+  background-image: url("../img/members/mentoring.jpg"); }
+  #mentoring:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/mentoring.jpg"); }
 
-/* line 45, ../sass/members.scss */
 #outreach {
-  background-image: url("../img/members/outreach.jpg");
-}
-/* line 47, ../sass/members.scss */
-#outreach:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/outreach.jpg");
-}
+  background-image: url("../img/members/outreach.jpg"); }
+  #outreach:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/outreach.jpg"); }
 
-/* line 52, ../sass/members.scss */
 #memberportal {
-  background-image: url("../img/members/memberportal.jpg");
-}
-/* line 54, ../sass/members.scss */
-#memberportal:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberportal.jpg");
-}
+  background-image: url("../img/members/memberportal.jpg"); }
+  #memberportal:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberportal.jpg"); }
 
-/* line 1, ../sass/sponsors.scss */
 .sponsors-row {
-  padding-bottom: 2%;
-}
-/* line 3, ../sass/sponsors.scss */
-.sponsors-row .sponsor-small {
-  vertical-align: center;
-  width: 100%;
-}
+  padding-bottom: 2%; }
+  .sponsors-row .sponsor-small {
+    vertical-align: center;
+    width: 100%; }
 
-/* line 1, ../sass/officers.scss */
+#sponsors p {
+  font-size: 1.3em;
+  line-height: 150%; }
+
 #officers {
   background-image: url("../img/wcs/newofficers.jpg");
   background-repeat: no-repeat;
@@ -171,26 +229,52 @@ footer p {
   width: 100% !important;
   height: 100vh !important;
   min-height: 100vh !important;
-  min-width: 100% !important;
-  position: relative;
-}
-/* line 12, ../sass/officers.scss */
-#officers #meetOfficersBtn {
-  position: absolute;
-  margin: 0 auto;
-  display: block;
-  bottom: 10%;
-  width: 40%;
-  left: 30%;
-}
+  min-width: 100% !important; }
+  #officers a {
+    color: #333333; }
+    #officers a:hover {
+      color: #000; }
+  #officers .btn-container {
+    position: relative;
+    top: calc(50% - 40px);
+    transform: translateY(-50%); }
 
-/* line 22, ../sass/officers.scss */
 .officerPicture {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 27, ../sass/officers.scss */
 #meetOfficers {
-  padding-top: 5%;
-}
+  padding-top: 5%; }
+
+#alumni {
+  background-color: #f5f3ee; }
+  #alumni p {
+    font-size: 1.3em;
+    line-height: 150%; }
+
+#featuredAlumni {
+  margin-bottom: 10px; }
+  #featuredAlumni .col-md-4 img {
+    width: 100%; }
+
+#contact {
+  color: #7d1935; }
+  #contact .form-control {
+    font-family: "Open Sans", sans-serif; }
+  #contact .label {
+    font-family: "Open Sans", sans-serif; }
+  #contact .btn-primary {
+    background-color: #7d1935;
+    border-color: #7d1935;
+    color: #fff; }
+    #contact .btn-primary:hover {
+      background-color: #7d1935;
+      color: #f5f3ee; }
+
+footer {
+  background-color: #f5f3ee;
+  padding: 5% 10% 5% 10%; }
+  footer p {
+    margin: 0;
+    font-size: 1.3em;
+    line-height: 150%; }
