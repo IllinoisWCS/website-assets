@@ -216,9 +216,11 @@ p {
     vertical-align: center;
     width: 100%; }
 
-#sponsors p {
-  font-size: 1.3em;
-  line-height: 150%; }
+#sponsors {
+  color: #7d1935; }
+  #sponsors p {
+    font-size: 1.3em;
+    line-height: 150%; }
 
 #officers {
   background-image: url("../img/wcs/newofficers.jpg");
