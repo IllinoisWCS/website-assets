@@ -470,7 +470,7 @@ $(document).ready(function() {
 	      "ask": []
 	    }
 	  ]
-	}
+	};
 
 	var output = Mustache.render($('#officerTemplate').html(), officers);
 	$('#allOfficers').html(output);

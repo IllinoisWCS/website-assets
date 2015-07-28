@@ -11,13 +11,19 @@
         <meta property="og:site_name" content="Women in Computer Science"/>
         <meta property="og:url" content="www.illinoiswcs.org"/>
         <meta property="og:image" content=""/>
+
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/lib/fontawesome/css/font-awesome.min.css"></link>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
         
         <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/lib/jquery-easing-original/jquery.easing.min.js"></script>
         <script type="text/javascript" src="assets/lib/mustache/mustache.min.js"></script>
+        <script type="text/javascript" src="assets/lib/isotope/dist/isotope.pkgd.min.js"></script>
         <script type="text/javascript" src="assets/js/officers.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
@@ -38,9 +44,9 @@
                         <li class="hidden">
                             <a class="page-scroll" href="#page-top"></a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a class="page-scroll" href="#ask">Ask Us About</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -53,8 +59,8 @@
                     <div class="thumbnail">
                         <img src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}"></img>
                         <div class="caption">
-                            <h1 align="center">{{firstname}} {{lastname}}</h1>
-                            <h3 align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></h3>
+                            <h4 align="center">{{firstname}} {{lastname}}</h4>
+                            <p align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></p>
                         </div>
                     </div>
                 </div>
@@ -106,8 +112,8 @@
                     <div class="thumbnail">
                         <img src="assets/img/officers/{{netid}}.jpg" data-toggle="modal" data-target="#{{netid}}"></img>
                         <div class="caption">
-                            <h1 align="center">{{firstname}} {{lastname}}</h1>
-                            <h3 align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></h3>
+                            <h4 align="center">{{firstname}} {{lastname}}</h4>
+                            <p align="center">{{position}} <a href="mailto:{{email}}"><i class="fa fa-envelope-o"></i></a></p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +161,7 @@
             </div>
         </script>
 
-        <div class="row" id="meetOfficers">
+        <div class="row padded" id="meetOfficers">
             <div class="col-sm-offset-1 col-md-10">
                 <h1 align="center">Meet Our Officers</h1>
                 <p align="center">Click each officer's picture to learn more about them</p>
@@ -164,10 +170,14 @@
             </div>
         </div>
 
-        <div class="row" id="ask">
-        </div>
+        <!--<div class="row padded" id="ask">
+            <div class="col-sm-offset-1 col-md-10">
+                <h1 align="center">Ask Us About</h1>
+                <p align="center">Our officers have a variety of expertise to offer. Ask us about classes, research, internships, etc.</p>
+            </div>
+        </div>-->
         
-        <!--<footer class="padded">
+        <footer>
             <div class="row">
                 <div class="col-md-4">
                     <p>Women in Computer Science</p>
@@ -177,18 +187,18 @@
                 </div>
                 <div class="col-md-4">
                     <p>Contact us at:</p>
-                    <h5>contact@illinoiswcs.org</h5>
+                    <p><b><a href="mailto:contact@illinoiswcs.org">contact@illinoiswcs.org</a></b></p>
                 </div>
                 <div class="col-md-4">
                     <ul id="socialMediaLinks" class="text-center">
-                        <li><a href="http://www.facebook.com/illinoiswcs"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href="http://www.twitter.com/illinoiswcs"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="http://www.linkedin.com/groups?home=&gid=4473443"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                        <li><a href="http://www.instagram.com/illinoiswcs"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="http://www.facebook.com/illinoiswcs"><i class="fa fa-facebook-square fa-4x"></i></a></li>
+                        <li><a href="http://www.twitter.com/illinoiswcs"><i class="fa fa-twitter-square fa-4x"></i></a></li>
+                        <li><a href="http://www.linkedin.com/groups?home=&gid=4473443"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+                        <li><a href="http://www.instagram.com/illinoiswcs"><i class="fa fa-instagram fa-4x"></i></a></li>
                     </ul>
                 </div>
             </div>
-        </footer>-->
+        </footer>
 
         
         <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>

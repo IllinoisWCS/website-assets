@@ -6,3 +6,8 @@
 	}
 }
 
+#sponsors {
+	p {
+		@include pfontspecial();
+	}
+}
