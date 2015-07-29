@@ -1,7 +1,14 @@
 #members {
   background-color: $offwhite;
-  a {
-    cursor: default;
+  .btnContainer {
+    margin-top: 10px;
+    @extend .center;
+    a {
+      color: $offblack;
+      &:hover {
+        color: $black;
+      }
+    }
   }
 }
 
@@ -60,5 +67,12 @@
   background-image: url('../img/members/memberportal.jpg');
   &:hover {
     @include gradientBackground('../img/members/memberportal.jpg');
+  }
+}
+
+#events {
+  margin-top: 50px;
+  iframe {
+    width: 100%;
   }
 }
