@@ -9,8 +9,8 @@
   min-height: 100vh !important;
   min-width: 100% !important;
   @extend .center;
-  a {
-    color: $offblack;
+  button {
+    color: $gray;
     &:hover {
       color: $black;
     }

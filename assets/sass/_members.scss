@@ -3,8 +3,8 @@
   .btnContainer {
     margin-top: 10px;
     @extend .center;
-    a {
-      color: $offblack;
+    button {
+      color: $gray;
       &:hover {
         color: $black;
       }

@@ -168,9 +168,9 @@ p {
   background-color: #f5f3ee; }
   #members .btnContainer {
     margin-top: 10px; }
-    #members .btnContainer a {
-      color: #333333; }
-      #members .btnContainer a:hover {
+    #members .btnContainer button {
+      color: #555; }
+      #members .btnContainer button:hover {
         color: #000; }
 
 .memberImage {
@@ -241,9 +241,9 @@ p {
   height: 100vh !important;
   min-height: 100vh !important;
   min-width: 100% !important; }
-  #officers a {
-    color: #333333; }
-    #officers a:hover {
+  #officers button {
+    color: #555; }
+    #officers button:hover {
       color: #000; }
   #officers .btn-container {
     position: relative;
