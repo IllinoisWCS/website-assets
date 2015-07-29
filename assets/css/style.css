@@ -42,7 +42,7 @@ p {
   width: 100%;
   height: 100vh; }
 
-.center, .overlay, #officers, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
+.center, .overlay, #members .btnContainer, #officers, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -166,8 +166,12 @@ p {
 
 #members {
   background-color: #f5f3ee; }
-  #members a {
-    cursor: default; }
+  #members .btnContainer {
+    margin-top: 10px; }
+    #members .btnContainer a {
+      color: #333333; }
+      #members .btnContainer a:hover {
+        color: #000; }
 
 .memberImage {
   background-repeat: no-repeat;
@@ -209,6 +213,11 @@ p {
   background-image: url("../img/members/memberportal.jpg"); }
   #memberportal:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/members/memberportal.jpg"); }
+
+#events {
+  margin-top: 50px; }
+  #events iframe {
+    width: 100%; }
 
 .sponsors-row {
   padding-bottom: 2%; }
