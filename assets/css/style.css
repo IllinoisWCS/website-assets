@@ -42,7 +42,7 @@ p {
   width: 100%;
   height: 100vh; }
 
-.center, .overlay, #members .btnContainer, #officers, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
+.center, .overlay, #members .btnContainer, #officers .col-md-10 #officerImg, #officers .btnContainer, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -232,7 +232,7 @@ p {
     line-height: 150%; }
 
 #officers {
-  background-image: url("../img/wcs/newofficers.jpg");
+  /*background-image: url('../img/wcs/newofficers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -240,15 +240,17 @@ p {
   width: 100% !important;
   height: 100vh !important;
   min-height: 100vh !important;
-  min-width: 100% !important; }
-  #officers button {
-    color: #555; }
-    #officers button:hover {
-      color: #000; }
-  #officers .btn-container {
-    position: relative;
-    top: calc(50% - 40px);
-    transform: translateY(-50%); }
+  min-width: 100% !important;*/ }
+  #officers .col-md-10 {
+    margin-top: 18px; }
+    #officers .col-md-10 #officerImg img {
+      width: 80%; }
+  #officers .btnContainer {
+    margin-top: 10px; }
+    #officers .btnContainer button {
+      color: #555; }
+      #officers .btnContainer button:hover {
+        color: #000; }
 
 .officerPicture {
   width: 100%;
