@@ -167,7 +167,7 @@ p {
 #members {
   background-color: #f5f3ee; }
   #members .btnContainer {
-    margin-top: 10px; }
+    margin-bottom: 10px; }
     #members .btnContainer button {
       color: #555; }
       #members .btnContainer button:hover {
