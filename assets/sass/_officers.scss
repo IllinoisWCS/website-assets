@@ -9,7 +9,6 @@
   min-height: 100vh !important;
   min-width: 100% !important;*/
   .col-md-10 {
-    margin-top: 18px;
     #officerImg {
       @extend .center;
       img {
@@ -18,7 +17,8 @@
     }
   }
   .btnContainer {
-    margin-top: 10px;
+    margin-top: 18px;
+    margin-bottom: 10px;
     @extend .center;
     button {
       color: $gray;
