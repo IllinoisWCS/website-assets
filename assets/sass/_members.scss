@@ -1,14 +1,11 @@
 #members {
   background-color: $offwhite;
   .btnContainer {
-    margin-top: 10px;
+    margin-bottom: 10px;
     @extend .center;
-    button {
-      color: $gray;
-      &:hover {
-        color: $black;
-      }
-    }
+  }
+  a {
+    cursor: default; /* TEMPORARY */
   }
 }
 

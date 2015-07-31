@@ -11,4 +11,7 @@
 	p {
 		@include pfontspecial();
 	}
+	a {
+		color: $black;
+	}
 }
