@@ -37,12 +37,13 @@ p {
     display: inline;
     margin: 10px; }
 
-/* Temporary */
-.filler {
-  width: 100%;
-  height: 100vh; }
+.btnContainer button {
+  color: #555; }
+  .btnContainer button:hover {
+    color: #000;
+    background-color: #999; }
 
-.center, .overlay, #members .btnContainer, #officers .col-md-10 #officerImg, #officers .btnContainer, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
+.center, .overlay, #members .btnContainer, #officers, #featuredAlumni .alumniImage, #featuredAlumni .alumniText {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -71,6 +72,11 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+a {
+  color: #7d1935; }
+  a:hover {
+    color: #999; }
 
 .navbar-brand img {
   height: 35px;
@@ -103,7 +109,7 @@ p {
 .carousel-inner {
   height: 100%; }
   .carousel-inner .item {
-    opacity: 0.5;
+    opacity: 0.6;
     transition-property: opacity;
     width: 100% !important;
     min-height: 100% !important;
@@ -168,10 +174,9 @@ p {
   background-color: #f5f3ee; }
   #members .btnContainer {
     margin-bottom: 10px; }
-    #members .btnContainer button {
-      color: #555; }
-      #members .btnContainer button:hover {
-        color: #000; }
+  #members a {
+    cursor: default;
+    /* TEMPORARY */ }
 
 .memberImage {
   background-repeat: no-repeat;
@@ -230,9 +235,11 @@ p {
   #sponsors p {
     font-size: 1.3em;
     line-height: 150%; }
+  #sponsors a {
+    color: #000; }
 
 #officers {
-  /*background-image: url('../img/wcs/newofficers.jpg');
+  background-image: url("../img/wcs/newofficers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -240,16 +247,7 @@ p {
   width: 100% !important;
   height: 100vh !important;
   min-height: 100vh !important;
-  min-width: 100% !important;*/ }
-  #officers .col-md-10 #officerImg img {
-    width: 80%; }
-  #officers .btnContainer {
-    margin-top: 18px;
-    margin-bottom: 10px; }
-    #officers .btnContainer button {
-      color: #555; }
-      #officers .btnContainer button:hover {
-        color: #000; }
+  min-width: 100% !important; }
 
 .officerPicture {
   width: 100%;

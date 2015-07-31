@@ -1,5 +1,5 @@
 #officers {
-  /*background-image: url('../img/wcs/newofficers.jpg');
+  background-image: url('../img/wcs/newofficers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -7,26 +7,8 @@
   width: 100% !important;
   height: 100vh !important;
   min-height: 100vh !important;
-  min-width: 100% !important;*/
-  .col-md-10 {
-    #officerImg {
-      @extend .center;
-      img {
-        width: 80%;
-      }
-    }
-  }
-  .btnContainer {
-    margin-top: 18px;
-    margin-bottom: 10px;
-    @extend .center;
-    button {
-      color: $gray;
-      &:hover {
-        color: $black;
-      }
-    }
-  }
+  min-width: 100% !important;
+  @extend .center;
 }
 
 .officerPicture {
