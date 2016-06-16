@@ -1,0 +1,42 @@
+<div class="container text-center">
+	<h2>IMDB Top 250 Movie Directory</h2>
+	</a>
+
+	<br>
+			
+	<div class="btn-group" role="group" aria-label="search/gallery">
+		<a class="btn btn-default" href="#/list" role="button">Search</a>
+		<a class="btn btn-default" href="#/gallery" role="button">Gallery</a>
+		<a class="btn btn-default" href="#/statistics" role="button">Statistics</a>
+		<a class="btn btn-default" href="index.html" role="button">Website</a>
+	</div>
+
+	<br><br>
+	
+	<div class="container">	
+		<div class="btn-group" role="group" aria-label="genres">
+		  <button type="button" class="btn btn-default" ng-click="genreFilter=''" ng-model="genreFilter">All</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='action'" ng-model="genreFilter">Action</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='adventure'" ng-model="genreFilter">Adventure</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='crime'" ng-model="genreFilter">Crime</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='comedy'" ng-model="genreFilter">Comedy</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='drama'" ng-model="genreFilter">Drama</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='musical'" ng-model="genreFilter">Musical</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='mystery'" ng-model="genreFilter">Mystery</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='romance'" ng-model="genreFilter">Romance</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='sci-fi'" ng-model="genreFilter">Sci-Fi</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='thriller'" ng-model="genreFilter">Thriller</button>
+		  <button type="button" class="btn btn-default" ng-click="genreFilter='western'" ng-model="genreFilter">Western</button>
+		</div>
+		<br><br>
+		<div class="container">
+		     <div ng-class="list ? 'col-md-6' : 'col-md-2'" ng-repeat="movie in movieList | filter: genreFilter" style="height: 100%;padding:1vw;">
+		     	<a class="btn btn-default btn-animate" href="#/details/{{movie.rank}}" role="button">
+		          	<img ng-show="movie" class="img-responsive" 
+		          	src="./data/images/{{movie.imdbID}}.jpg"
+		          	style="height:15vw;width:auto;" />
+		        </a>
+		      </div>
+  		</div>
+	</div>
+</div>

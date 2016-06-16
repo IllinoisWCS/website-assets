@@ -1,0 +1,43 @@
+<div class="container text-center">
+	<h2>IMDB Top 250 Movie Directory</h2>
+
+	<br>
+			
+	<div class="btn-group" role="group" aria-label="search/gallery">
+		<a class="btn btn-default" href="#/list" role="button">Search</a>
+		<a class="btn btn-default" href="#/gallery" role="button">Gallery</a>
+		<a class="btn btn-default" href="#/statistics" role="button">Statistics</a>
+		<a class="btn btn-default" href="index.html" role="button">Website</a>
+	</div>
+
+	<br><br>
+	<!-- This directive binds to $scope.movieFilter variable -->
+	<input type="text" ng-model="movieFilter" placeholder=" Search..." style="width:30%"/>
+	<br><br>
+	<div class="btn-group" role="group" aria-label="genres">
+		 <button type="button" class="btn btn-default" ng-click="sortFilter='rank'" ng-model="sortFilter">Rank Increasing</button>
+		 <button type="button" class="btn btn-default" ng-click="sortFilter='-rank'" ng-model="sortFilter">Rank Decreasing</button>
+		 <button type="button" class="btn btn-default" ng-click="sortFilter='title'" ng-model="sortFilter">Title Increasing</button>
+		 <button type="button" class="btn btn-default" ng-click="sortFilter='-title'" ng-model="sortFilter">Title Decreasing</button>
+	</div>
+
+	<br><br>
+
+	<div style="padding-bottom: 30px;">	
+		<table class="table-striped">
+			<tbody>
+				<tr ng-repeat="movie in movieList | filter: movieFilter | orderBy: sortFilter">
+					<td>
+						<img class="img-responsive img-poster" src="./data/images/{{movie.imdbID}}.jpg" alt="Responsive Image" />
+					</td>
+					<td>
+						<a class="movie-link" href="#/details/{{movie.rank}}">
+							<h4 class="text-warning movie-info">{{movie.title}}</h4>
+						</a>
+						<p class="text-info movie-info">Rank: {{movie.rank}}</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

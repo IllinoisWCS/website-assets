@@ -1,0 +1,191 @@
+* {
+  border-radius: 0 !important;
+}
+
+.navbar-icon {
+	margin-top: 15px;
+	max-width: 175%;
+	max-height: 175%;
+}
+
+.navbar {
+	min-height: 100px !important;
+}
+
+.navbar-nav > li {
+	margin-top: 20px;
+}
+
+.navbar-right {
+	margin-right: 0px !important;
+}
+
+.navbar-small {
+	min-height: 50px !important;
+}
+
+.navbar-small .navbar-icon {
+	margin-top: 0px;
+	max-width: 115%;
+	max-height: 115%;
+}
+
+.navbar-small .navbar-nav > li {
+	margin-top: 0px;
+	font-size: 12px;
+}
+
+.page-scroll {
+	text-transform: uppercase;
+	
+}
+
+li:hover {
+	background-color: #c8c8c8;
+}
+
+header {
+	background-color: #c8c8c8;
+	color: #fff;
+	margin: 0 auto;
+}
+
+header .container {
+	overflow: hidden;
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 1000px;
+	width: auto;
+}
+
+header p {
+	text-align: center;
+}
+
+.container {
+	padding-top: 75px;
+	padding-bottom: 50px;
+	padding-left: 75px !important;
+	padding-right: 75px !important;
+	text-align: center;
+}
+
+.carousel, .item, .active, .carousel-inner{
+	height: 100%;
+}
+
+.item {
+	opacity: 0.5;
+}
+
+.fill{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.overlay { 
+	position: absolute;
+	z-index: 12;
+	top: calc(50% - 1.5em);
+	width: 100%;
+}
+
+h1 {
+	/* font-family: Futura-Condensed, 'Trebuchet MS', Arial, sans-serif !important; */
+	font-family: 'Lobster', cursive !important;
+	font-weight: 500 !important;
+	font-size: 5em !important;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-family: 'Lobster', cursive !important;
+	font-weight: 400 !important;
+	font-size: 3em !important;
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-family: 'Lobster', cursive !important;
+	font-size: 2em !important;
+}
+
+nav {
+	opacity: 0.8;
+}
+
+header, nav, a, img, li{
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+}
+
+#about, #alumni {
+	background-color: #F5F3EE;
+	height: 500px;
+	color: #7D1935;
+	overflow: hidden; /* May need to change */
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	line-height: 150%;
+	font-size: 1.3em;
+}
+
+#officers {
+	background: url('../data/images/officers.jpg') 100% 0 no-repeat fixed;
+	background-position: center; 
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#officers .container {
+	height: 750px;
+}
+
+#officers .btn_container {
+	position: relative;
+	top: calc(50%  - 20px);
+	transform: translateY(-50%);
+}
+
+.btn {
+	padding: 15px 20px !important;
+	opacity: 0.8;
+}
+
+.btn-default {
+	border-style: none !important;
+}
+
+#sponsors {
+	background-color: #7D1935;
+	color: #F5F3EE;
+	height: 1000px;
+}
+
+#members {
+	background-color: #4A96AD;
+	height: 900px;
+}
+
+.col-md-6 {
+	position: relative;
+	margin: 0 auto;
+}
+
+.col-md-6 > a {
+	position: absolute;
+	z-index: 100;
+	top: calc(50% - 40px);
+}
+
+.col-md-6 > .img-responsive {
+	opacity: 0.8;
+}

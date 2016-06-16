@@ -1,0 +1,37 @@
+<div class="container text-center">
+	<h2>IMDB Top 250 Movie Directory</h2>
+	</a>
+
+	<br>
+			
+	<div class="btn-group" role="group" aria-label="search/gallery">
+		<a class="btn btn-default" href="#/list" role="button">Search</a>
+		<a class="btn btn-default" href="#/gallery" role="button">Gallery</a>
+		<a class="btn btn-default" href="#/statistics" role="button">Statistics</a>
+		<a class="btn btn-default" href="index.html" role="button">Website</a>
+	</div>
+
+	<br><br>
+	
+	<div class="jumbotron">
+		<div class="container">	
+			<div class="row" style="padding-bottom:30px;">
+				<div class="col-xs-3 col-md-3">
+					<img ng-show="movie" class="img-responsive" src="./data/images/{{movie.imdbID}}.jpg" alt="Responsive Image" style="height:25vw;width:auto;"/>
+				</div>
+				<div class="col-xs-8 col-md-8" style="text-align:left;">
+					<h4 class="text-warning">{{movie.title}}</h4>
+					<p class="text-info" style="font-size:1.5vw;">Rank: {{movie.rank}}</p>
+					<p class="text-info" style="font-size:1.5vw;">{{movie.plot}}</p>
+					<p class="text-success" style="font-size:1.5vw;">Released: {{movie.released}}</p>
+					<p class="text-success" style="font-size:1.5vw;">Runtime: {{movie.runtime}}</p>
+					<p class="text-success" style="font-size:1.5vw;">Awards: {{movie.awards}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="btn-group" role="group" aria-label="back/forward">
+			<a class="btn btn-default" href="#/details/{{movie.rank == 1 ? 250 : (movie.rank - 1)}}" role="button" style="float:left;">back</a>
+			<a class="btn btn-default" href="#/details/{{movie.rank == 250 ? 1 : (movie.rank + 1)}}" role="button" style="float:right;">next</a>
+		</div>
+	</div>
+</div>

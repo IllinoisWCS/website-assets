@@ -1,0 +1,63 @@
+<div class="container text-center">
+	<h2>IMDB Top 250 Movie Directory</h2>
+
+	<br>
+			
+	<div class="btn-group" role="group" aria-label="search/gallery">
+		<a class="btn btn-default" href="#/list" role="button">Search</a>
+		<a class="btn btn-default" href="#/gallery" role="button">Gallery</a>
+		<a class="btn btn-default" href="#/statistics" role="button">Statistics</a>
+		<a class="btn btn-default" href="index.html" role="button">Website</a>
+	</div>
+
+	<br><br>
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Movies by Languages</h4>
+			<br>
+			<div>
+	    		<canvas tc-chartjs-doughnut chart-options="languageOptions" chart-data="languageData" auto-legend style="width:85vw;height:auto;"></canvas>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Movies by Countries</h4>
+			<br>
+			<div>
+	    		<canvas tc-chartjs-pie chart-options="countryOptions" chart-data="countryData" auto-legend style="width:85vw;height:auto;"></canvas>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Movies by IMDB Ratings</h4>
+			<br>
+			<div>
+				<canvas tc-chartjs-doughnut chart-options="languageOptions" chart-data="ratingData" auto-legend style="width:85vw;height:auto;"></canvas>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Movies by Metascores</h4>
+			<br>
+			<div>
+	    		<canvas tc-chartjs-pie chart-options="countryOptions" chart-data="metaData" auto-legend style="width:85vw;height:auto;"></canvas>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Movies by Movie Ratings</h4>
+			<br>
+			<div>
+	    		<canvas tc-chartjs-doughnut chart-options="languageOptions" chart-data="ratedData" auto-legend style="width:85vw;height:auto;"></canvas>
+	    	</div>
+	    </div>
+	</div>
+</div>
